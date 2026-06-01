@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { getSupabaseBrowser } from "@/lib/supabaseClient";
 
 export type RealtimeEvento = {
   recurso: string;
@@ -9,8 +10,13 @@ export type RealtimeEvento = {
   em: string;
 };
 
-// Hook que abre uma conexão SSE com /api/realtime e dispara o callback a cada
-// evento recebido. Reconecta automaticamente em caso de queda.
+// Hook de tempo real do CRM.
+//
+// - Em produção (Vercel): usa o **Supabase Realtime** — escuta as mudanças da
+//   tabela "Imovel" no Postgres via websocket e dispara o callback.
+// - Em desenvolvimento sem Supabase: usa o fallback **SSE** em /api/realtime.
+//
+// Reconecta automaticamente em ambos os casos.
 export function useRealtime(aoReceber?: (evento: RealtimeEvento) => void) {
   const [conectado, setConectado] = useState(false);
   const callbackRef = useRef(aoReceber);
@@ -20,8 +26,40 @@ export function useRealtime(aoReceber?: (evento: RealtimeEvento) => void) {
   }, [aoReceber]);
 
   useEffect(() => {
-    const fonte = new EventSource("/api/realtime");
+    const supabase = getSupabaseBrowser();
 
+    // --- Caminho 1: Supabase Realtime (produção) ---
+    if (supabase) {
+      const canal = supabase
+        .channel("crm-imoveis")
+        .on(
+          "postgres_changes",
+          { event: "*", schema: "public", table: "Imovel" },
+          (payload) => {
+            const acao =
+              payload.eventType === "INSERT"
+                ? "criado"
+                : payload.eventType === "UPDATE"
+                  ? "atualizado"
+                  : "removido";
+            const linha = (payload.new ?? payload.old) as { id?: string } | null;
+            callbackRef.current?.({
+              recurso: "imovel",
+              acao,
+              id: linha?.id,
+              em: new Date().toISOString(),
+            });
+          },
+        )
+        .subscribe((status) => setConectado(status === "SUBSCRIBED"));
+
+      return () => {
+        supabase.removeChannel(canal);
+      };
+    }
+
+    // --- Caminho 2: fallback SSE (desenvolvimento) ---
+    const fonte = new EventSource("/api/realtime");
     fonte.onopen = () => setConectado(true);
     fonte.onerror = () => setConectado(false);
     fonte.onmessage = (e) => {
@@ -33,7 +71,7 @@ export function useRealtime(aoReceber?: (evento: RealtimeEvento) => void) {
         }
         callbackRef.current?.(evento);
       } catch {
-        // ignora mensagens malformadas (ex.: heartbeat)
+        // ignora heartbeats / mensagens malformadas
       }
     };
 

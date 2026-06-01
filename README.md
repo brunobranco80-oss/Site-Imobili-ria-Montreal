@@ -80,19 +80,41 @@ O repositório já está pronto (`vercel.json` + `prisma generate` no build).
 
 1. Tenha o banco do Supabase pronto (seção acima) e rode `npm run db:deploy`
    uma vez para criar as tabelas em produção.
-2. Em [vercel.com](https://vercel.com) → **Add New → Project** → importe este
+2. Habilite o tempo real (ver seção abaixo).
+3. Em [vercel.com](https://vercel.com) → **Add New → Project** → importe este
    repositório (branch `claude/site-progress-review-zGNzd`).
-3. Em **Environment Variables**, adicione:
-   `DATABASE_URL`, `DIRECT_URL` e `ANTHROPIC_API_KEY`.
-4. Clique em **Deploy**. 🚀
+4. Em **Environment Variables**, adicione: `DATABASE_URL`, `DIRECT_URL`,
+   `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` e `ANTHROPIC_API_KEY`.
+5. Clique em **Deploy**. 🚀
+
+## ⚡ Tempo real (Supabase Realtime)
+
+O tempo real funciona em dois modos automáticos:
+
+- **Produção / Vercel:** usa o **Supabase Realtime** — o navegador escuta as
+  mudanças da tabela `Imovel` no Postgres via websocket. Funciona entre todos os
+  usuários e instâncias.
+- **Desenvolvimento local:** se as variáveis `NEXT_PUBLIC_SUPABASE_*` não
+  estiverem definidas, usa automaticamente o **fallback via SSE**.
+
+Para habilitar o Realtime no Supabase (uma única vez):
+
+1. Crie as tabelas: `npm run db:deploy`.
+2. No Supabase → **SQL Editor**, rode o conteúdo de
+   [`supabase/realtime.sql`](supabase/realtime.sql) (adiciona a tabela `Imovel`
+   à publicação de realtime).
+3. Em **Project Settings → API**, copie a `Project URL` e a `anon public key`
+   para `NEXT_PUBLIC_SUPABASE_URL` e `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
 
 ### Variáveis de ambiente (`.env`)
 
-| Variável            | Descrição                                                                  |
-| ------------------- | -------------------------------------------------------------------------- |
-| `DATABASE_URL`      | Postgres do Supabase — conexão *pooled* (porta 6543), usada pela aplicação. |
-| `DIRECT_URL`        | Postgres do Supabase — conexão direta (porta 5432), usada por migrações.    |
-| `ANTHROPIC_API_KEY` | Chave do Claude para a IA. Sem ela, a geração de descrição usa o fallback.  |
+| Variável                        | Descrição                                                                  |
+| ------------------------------- | -------------------------------------------------------------------------- |
+| `DATABASE_URL`                  | Postgres do Supabase — conexão *pooled* (porta 6543), usada pela aplicação. |
+| `DIRECT_URL`                    | Postgres do Supabase — conexão direta (porta 5432), usada por migrações.    |
+| `NEXT_PUBLIC_SUPABASE_URL`      | URL do projeto Supabase (tempo real no navegador).                          |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Chave pública (anon) do Supabase para o Realtime.                           |
+| `ANTHROPIC_API_KEY`             | Chave do Claude para a IA. Sem ela, a geração de descrição usa o fallback.  |
 
 ### Scripts úteis
 
@@ -104,33 +126,29 @@ O repositório já está pronto (`vercel.json` + `prisma generate` no build).
 | `npm run db:seed`   | Popula com imóveis de exemplo de Montréal  |
 | `npm run db:studio` | Abre o Prisma Studio (visualizar o banco)  |
 
-> ⚙️ **Tempo real na Vercel:** o tempo real atual usa SSE em memória, ideal para
-> rodar localmente e em um único servidor. Na Vercel (serverless, múltiplas
-> instâncias) ele não é garantido entre instâncias — a evolução planejada é usar
-> o **Supabase Realtime** nativo, que já faz parte do roadmap.
-
 ## 🗺️ Próximos módulos (planejados)
 
 - 🎯 **Leads** — captura, qualificação e scoring por IA
 - 📈 **Pipeline / Kanban** — funil de negócios (arrastar e soltar)
 - 🗓️ **Agenda** — visitas, tarefas e lembretes
 - 💬 Integração WhatsApp / E-mail
-- 🔐 Autenticação e perfis de equipe
-- ☁️ Migração para **Supabase** (Postgres + Realtime nativo + Auth) para produção
+- 🔐 Autenticação e perfis de equipe (com RLS no Supabase)
 
 ## 📁 Estrutura
 
 ```
 prisma/
-  schema.prisma        # modelos Imovel e Foto
+  schema.prisma        # modelos Imovel e Foto (Postgres)
   seed.ts              # dados de exemplo
+supabase/
+  realtime.sql         # habilita o Supabase Realtime na tabela Imovel
 src/
   app/
     page.tsx           # painel/dashboard
     imoveis/           # listagem, novo, [id], [id]/editar, actions.ts
     api/
-      realtime/        # SSE (tempo real)
+      realtime/        # SSE (fallback de tempo real)
       ai/descricao/    # geração de descrição por IA
-  components/          # Sidebar, ImovelForm, ImovelCard, realtime, etc.
-  lib/                 # db, ai, realtime, validations, constants, imoveis
+  components/          # Sidebar, ImovelForm, ImovelCard, useRealtime, etc.
+  lib/                 # db, ai, realtime, supabaseClient, validations, constants
 ```
