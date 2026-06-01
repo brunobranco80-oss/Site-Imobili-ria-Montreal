@@ -1,15 +1,17 @@
 // Schema do CRM da Imobiliária Montreal
-// Banco local SQLite para desenvolvimento.
-// Para produção com tempo real nativo, troque o provider para "postgresql"
-// e aponte para o Supabase (a estrutura dos modelos permanece a mesma).
+// Banco Postgres (Supabase) — mesmo ambiente em desenvolvimento e produção.
+//
+// DATABASE_URL : conexão "pooled" (porta 6543, ?pgbouncer=true) usada pelo app.
+// DIRECT_URL   : conexão direta (porta 5432) usada por migrações / db push.
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 /// Imóvel — unidade central do módulo de Cadastro de Imóveis.

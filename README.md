@@ -42,43 +42,72 @@ Primeiro módulo entregue: **Cadastro de Imóveis** (com painel/dashboard).
 
 - **Next.js 16** (App Router) + **React 19** + **TypeScript**
 - **Tailwind CSS 4**
-- **Prisma 6** + **SQLite** (local) — pronto para migrar para **Postgres/Supabase**
+- **Prisma 6** + **Postgres (Supabase)** — mesmo banco em dev e produção
 - **Anthropic SDK** (Claude) para IA
 - **Zod** para validação
 
-## ☁️ Rodar no GitHub Codespaces (sem instalar nada)
+## 🗄️ Banco de dados (Supabase)
 
-1. No GitHub, abra a branch `claude/site-progress-review-zGNzd`.
-2. Clique em **Code → Codespaces → Create codespace on...**.
-3. Aguarde a preparação automática (instala dependências, cria o banco e popula
-   com exemplos — definido em `.devcontainer/`).
-4. No terminal do Codespace, rode `npm run dev` e abra a porta **3000**.
+O app usa **Postgres**, hospedado no **Supabase** (plano gratuito).
+
+1. Crie um projeto em [supabase.com](https://supabase.com).
+2. Em **Project Settings → Database → Connection string**, copie as URLs e
+   preencha o `.env`:
+   - `DATABASE_URL` → conexão **Transaction pooler** (porta `6543`, com `?pgbouncer=true`)
+   - `DIRECT_URL` → conexão **direta** (porta `5432`)
+3. Rode `npm run setup` para criar as tabelas e popular com exemplos.
 
 ## 🚀 Rodar localmente
 
 ```bash
 npm install
-cp .env.example .env      # ajuste as variáveis se necessário
-npm run setup             # gera o client, cria o banco e popula com exemplos
+cp .env.example .env      # preencha DATABASE_URL, DIRECT_URL (Supabase) e ANTHROPIC_API_KEY
+npm run setup             # gera o client, cria as tabelas e popula com exemplos
 npm run dev               # http://localhost:3000
 ```
 
+## ☁️ Rodar no GitHub Codespaces
+
+1. No GitHub, na branch `claude/site-progress-review-zGNzd`, clique em
+   **Code → Codespaces → Create codespace**.
+2. Aguarde a preparação automática (instala dependências — definido em `.devcontainer/`).
+3. Preencha o `.env` com as URLs do Supabase e rode `npm run setup`.
+4. Rode `npm run dev` e abra a porta **3000**.
+
+## ▲ Deploy na Vercel
+
+O repositório já está pronto (`vercel.json` + `prisma generate` no build).
+
+1. Tenha o banco do Supabase pronto (seção acima) e rode `npm run db:deploy`
+   uma vez para criar as tabelas em produção.
+2. Em [vercel.com](https://vercel.com) → **Add New → Project** → importe este
+   repositório (branch `claude/site-progress-review-zGNzd`).
+3. Em **Environment Variables**, adicione:
+   `DATABASE_URL`, `DIRECT_URL` e `ANTHROPIC_API_KEY`.
+4. Clique em **Deploy**. 🚀
+
 ### Variáveis de ambiente (`.env`)
 
-| Variável            | Descrição                                                                 |
-| ------------------- | ------------------------------------------------------------------------- |
-| `DATABASE_URL`      | Conexão do banco. Padrão: `file:./dev.db` (SQLite local).                 |
-| `ANTHROPIC_API_KEY` | Chave do Claude para a IA. Sem ela, a geração de descrição usa o fallback. |
+| Variável            | Descrição                                                                  |
+| ------------------- | -------------------------------------------------------------------------- |
+| `DATABASE_URL`      | Postgres do Supabase — conexão *pooled* (porta 6543), usada pela aplicação. |
+| `DIRECT_URL`        | Postgres do Supabase — conexão direta (porta 5432), usada por migrações.    |
+| `ANTHROPIC_API_KEY` | Chave do Claude para a IA. Sem ela, a geração de descrição usa o fallback.  |
 
 ### Scripts úteis
 
 | Comando             | O que faz                                  |
 | ------------------- | ------------------------------------------ |
 | `npm run dev`       | Servidor de desenvolvimento                |
-| `npm run build`     | Build de produção                          |
-| `npm run db:push`   | Aplica o schema no banco                   |
+| `npm run build`     | Build de produção (com `prisma generate`)  |
+| `npm run db:deploy` | Aplica o schema no banco                   |
 | `npm run db:seed`   | Popula com imóveis de exemplo de Montréal  |
 | `npm run db:studio` | Abre o Prisma Studio (visualizar o banco)  |
+
+> ⚙️ **Tempo real na Vercel:** o tempo real atual usa SSE em memória, ideal para
+> rodar localmente e em um único servidor. Na Vercel (serverless, múltiplas
+> instâncias) ele não é garantido entre instâncias — a evolução planejada é usar
+> o **Supabase Realtime** nativo, que já faz parte do roadmap.
 
 ## 🗺️ Próximos módulos (planejados)
 
