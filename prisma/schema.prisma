@@ -1,0 +1,73 @@
+// Schema do CRM da Imobiliária Montreal
+// Banco local SQLite para desenvolvimento.
+// Para produção com tempo real nativo, troque o provider para "postgresql"
+// e aponte para o Supabase (a estrutura dos modelos permanece a mesma).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// Imóvel — unidade central do módulo de Cadastro de Imóveis.
+/// Campos com valores fixos (tipo, finalidade, status) são validados na
+/// aplicação via Zod, já que o SQLite não suporta enums nativos.
+model Imovel {
+  id        String   @id @default(cuid())
+  codigo    Int      @unique // referência amigável (ex.: #1024) — atribuída pela aplicação
+
+  titulo      String
+  descricao   String  @default("")
+  tipo        String  @default("Apartamento") // Apartamento | Casa | Condo | Cobertura | Studio | Terreno | Comercial
+  finalidade  String  @default("Venda")       // Venda | Aluguel
+  status      String  @default("Disponivel")  // Disponivel | Reservado | Vendido | Alugado | Inativo
+  destaque    Boolean @default(false)
+
+  // Valores (em CAD)
+  preco       Float   @default(0)
+  condominio  Float?  // taxas de condomínio mensais
+  taxas       Float?  // taxes municipais/escolares anuais
+
+  // Características
+  quartos   Int    @default(0)
+  banheiros Int    @default(0)
+  vagas     Int    @default(0)
+  area      Float  @default(0) // em pés quadrados (sq ft)
+
+  // Localização (padrão Montréal / Québec)
+  endereco   String  @default("")
+  bairro     String  @default("")
+  cidade     String  @default("Montréal")
+  provincia  String  @default("QC")
+  cep        String  @default("") // código postal
+  pais       String  @default("Canadá")
+  latitude   Float?
+  longitude  Float?
+
+  // Proprietário (contato simples — vira módulo próprio depois)
+  proprietarioNome     String?
+  proprietarioContato  String?
+
+  fotos Foto[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([tipo])
+  @@index([finalidade])
+}
+
+/// Foto de um imóvel.
+model Foto {
+  id       String  @id @default(cuid())
+  url      String
+  ordem    Int     @default(0)
+  imovel   Imovel  @relation(fields: [imovelId], references: [id], onDelete: Cascade)
+  imovelId String
+
+  @@index([imovelId])
+}
