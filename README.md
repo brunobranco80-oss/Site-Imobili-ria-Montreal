@@ -46,7 +46,15 @@ Primeiro módulo entregue: **Cadastro de Imóveis** (com painel/dashboard).
 - **Anthropic SDK** (Claude) para IA
 - **Zod** para validação
 
-## 🚀 Como rodar
+## ☁️ Rodar no GitHub Codespaces (sem instalar nada)
+
+1. No GitHub, abra a branch `claude/site-progress-review-zGNzd`.
+2. Clique em **Code → Codespaces → Create codespace on...**.
+3. Aguarde a preparação automática (instala dependências, cria o banco e popula
+   com exemplos — definido em `.devcontainer/`).
+4. No terminal do Codespace, rode `npm run dev` e abra a porta **3000**.
+
+## 🚀 Rodar localmente
 
 ```bash
 npm install
