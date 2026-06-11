@@ -1,0 +1,30 @@
+{
+  "name": "CRM Imobiliária Montreal",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22",
+
+  // Instala dependências, cria o banco SQLite e popula com exemplos.
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  // O servidor de desenvolvimento roda na porta 3000.
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "CRM (Next.js)",
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Prisma.prisma",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}
