@@ -704,13 +704,38 @@ function trackContact(origem) {
   if (hv) {
     const mobile = window.matchMedia("(max-width: 959px)").matches;
     hv.querySelector("source").src = mobile ? "video/sala601_30s_4x5.mp4" : "video/sala601_30s_16x9.mp4";
-    hv.load(); const p = hv.play(); if (p && p.catch) p.catch(() => {});
     const mb = document.getElementById("heroMute");
+    let userMuted = false, inView = true;
+    const label = () => { if (mb) mb.innerHTML = hv.muted ? '<span aria-hidden="true">🔇</span> Ouvir com som' : '<span aria-hidden="true">🔊</span> Silenciar'; };
+    const tryPlay = () => { const p = hv.play(); if (p && p.catch) p.catch(() => {}); };
+    // 1) tenta já com som; se o navegador bloquear o autoplay com áudio, cai para mudo
+    hv.load(); hv.muted = false;
+    const first = hv.play();
+    if (first && first.then) first.then(label, err => { if (!err || err.name === "NotAllowedError") { hv.muted = true; tryPlay(); } label(); }); else label();
+    hv.addEventListener("playing", label, { once: true });
+    // 2) ao primeiro toque/clique em qualquer lugar, liga o som (se o visitante não tiver silenciado)
+    const unlock = () => {
+      if (userMuted || !inView) return;
+      hv.muted = false; if (hv.paused) tryPlay(); label();
+      if (window.gtag) gtag("event", "hero_sound_on", { how: "first_touch" });
+    };
+    ["pointerup", "touchend", "keydown"].forEach(ev => document.addEventListener(ev, function h(e) {
+      if (mb && e.target && mb.contains(e.target)) return;      // o próprio botão trata o som
+      document.removeEventListener(ev, h, true); unlock();
+    }, true));
+    // 3) botão: silenciar / ouvir
     if (mb) mb.addEventListener("click", () => {
-      hv.muted = !hv.muted; if (hv.paused) hv.play();
-      mb.innerHTML = hv.muted ? '<span aria-hidden="true">🔇</span> Ouvir com som' : '<span aria-hidden="true">🔊</span> Silenciar';
-      if (!hv.muted && window.gtag) gtag("event", "hero_sound_on");
+      hv.muted = !hv.muted; userMuted = hv.muted; if (hv.paused) tryPlay(); label();
+      if (!hv.muted && window.gtag) gtag("event", "hero_sound_on", { how: "button" });
     });
+    // 4) saiu da tela → pausa (a música para); voltou → toca de novo, no mesmo estado de som
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(en => en.forEach(x => {
+        inView = x.intersectionRatio >= 0.35;
+        if (inView) { if (hv.paused) tryPlay(); } else if (!hv.paused) hv.pause();
+      }), { threshold: [0, 0.35, 0.6] }).observe(hv);
+    }
+    document.addEventListener("visibilitychange", () => { if (document.hidden) hv.pause(); else if (inView) tryPlay(); });
   }
   // faixa de fotos: setas rolam uma "página"
   const strip = document.getElementById("galeria-hero");
