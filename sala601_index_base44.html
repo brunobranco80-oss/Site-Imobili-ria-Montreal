@@ -142,7 +142,10 @@
   .photo-card .vid .badge{position:absolute;right:.7rem;top:.7rem;background:rgba(255,255,255,.92);color:var(--ink);font-size:.7rem;font-weight:700;padding:.32rem .6rem;border-radius:2rem;display:flex;align-items:center;gap:.4rem;z-index:2}
   .photo-card .vid .badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 1.6s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-  .photo-card .vid .mute{position:absolute;right:.6rem;bottom:.6rem;z-index:2;background:rgba(255,255,255,.92);color:var(--ink);border:0;font:700 .72rem var(--ff-body);padding:.45rem .75rem;border-radius:2rem;cursor:pointer;display:flex;align-items:center;gap:.35rem}
+  .photo-card .vid .mute{position:absolute;right:.6rem;bottom:.6rem;z-index:2;width:34px;height:34px;padding:0;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(20,23,26,.55);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:background .2s,transform .2s}
+  .photo-card .vid .mute svg{width:18px;height:18px;fill:currentColor}
+  .photo-card .vid .mute:hover{background:rgba(20,23,26,.8);transform:scale(1.06)}
+  .photo-card .vid .mute.on{background:var(--sea);border-color:transparent}
   .photo-card .vid .mute:hover{background:#fff}
   /* faixa de fotos rolável */
   .strip-wrap{position:relative;min-width:0}
@@ -381,7 +384,7 @@
           <source src="video/sala601_30s_16x9.mp4" type="video/mp4" data-desktop>
         </video>
         <span class="badge">Vídeo real</span>
-        <button class="mute" id="heroMute" type="button" aria-label="Ativar o som do vídeo"><span aria-hidden="true">🔇</span> Ouvir com som</button>
+        <button class="mute" id="heroMute" type="button" aria-label="Ouvir com som" title="Ouvir com som"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 9.5l4 4m0-4l-4 4" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
       </div>
       <div class="strip-wrap"><button class="sarr prev" type="button" aria-label="Fotos anteriores">‹</button><div class="strip" id="galeria-hero" aria-label="Fotos reais da sala e do prédio — deslize para o lado"><button type="button" data-src="fotos/02_porta_601.webp" data-cap="A porta da Sala 601, no 6º andar — foto real"><img src="fotos/t/02_porta_601.webp" alt="A porta da Sala 601, no 6º andar" loading="lazy" style="object-position:20% 60%"><span><i>Foto real</i> · Porta 601</span></button><button type="button" data-src="fotos/03_sala_601_casco.webp" data-cap="Sala 601 hoje, em casco — foto real"><img src="fotos/t/03_sala_601_casco.webp" alt="Sala 601 hoje, em casco" loading="lazy" style="object-position:center 45%"><span><i>Foto real</i> · A sala</span></button><button type="button" data-src="fotos/04_sala_601_janela.webp" data-cap="Janela de canto a canto, nascente — foto real"><img src="fotos/t/04_sala_601_janela.webp" alt="Janela de canto a canto, nascente" loading="lazy" style="object-position:center 40%"><span><i>Foto real</i> · Janela</span></button><button type="button" data-src="fotos/01_vista_janela_601.webp" data-cap="A vista da janela da Sala 601, sem edição — foto real"><img src="fotos/t/01_vista_janela_601.webp" alt="A vista da janela da Sala 601, sem edição" loading="lazy" style="object-position:center 40%"><span><i>Foto real</i> · A vista</span></button><button type="button" data-src="fotos/05_janela_601.webp" data-cap="O mar entre os prédios, da janela da 601 — foto real"><img src="fotos/t/05_janela_601.webp" alt="O mar entre os prédios, da janela da 601" loading="lazy"><span><i>Foto real</i> · Vista mar</span></button><button type="button" data-src="fotos/07_terraco_cobertura_mar.webp" data-cap="Terraço da cobertura com vista para o mar — foto real"><img src="fotos/t/07_terraco_cobertura_mar.webp" alt="Terraço da cobertura com vista para o mar" loading="lazy" style="object-position:center 40%"><span><i>Foto real</i> · Terraço</span></button><button type="button" data-src="fotos/09_auditorio_vista_mar.webp" data-cap="Auditório panorâmico com o mar atrás do vidro — foto real"><img src="fotos/t/09_auditorio_vista_mar.webp" alt="Auditório panorâmico com o mar atrás do vidro" loading="lazy"><span><i>Foto real</i> · Auditório</span></button><button type="button" data-src="fotos/10_lobby.webp" data-cap="Lobby com pé-direito duplo — foto real"><img src="fotos/t/10_lobby.webp" alt="Lobby com pé-direito duplo" loading="lazy"><span><i>Foto real</i> · Lobby</span></button><button type="button" data-src="fotos/11_lobby_lustre.webp" data-cap="Lustre do lobby — foto real"><img src="fotos/t/11_lobby_lustre.webp" alt="Lustre do lobby" loading="lazy"><span><i>Foto real</i> · Lobby</span></button><button type="button" data-src="fotos/12_acesso_facial.webp" data-cap="Catracas com reconhecimento facial — foto real"><img src="fotos/t/12_acesso_facial.webp" alt="Catracas com reconhecimento facial" loading="lazy"><span><i>Foto real</i> · Acesso facial</span></button><button type="button" data-src="fotos/13_recepcao.webp" data-cap="Recepção — foto real"><img src="fotos/t/13_recepcao.webp" alt="Recepção" loading="lazy"><span><i>Foto real</i> · Recepção</span></button><button type="button" data-src="fotos/14_business_center.webp" data-cap="Business center — foto real"><img src="fotos/t/14_business_center.webp" alt="Business center" loading="lazy"><span><i>Foto real</i> · Business center</span></button><button type="button" data-src="fotos/16_sala_reuniao.webp" data-cap="Sala de reunião equipada — foto real"><img src="fotos/t/16_sala_reuniao.webp" alt="Sala de reunião equipada" loading="lazy" style="object-position:center 35%"><span><i>Foto real</i> · Reunião</span></button><button type="button" data-src="fotos/18_terraco_terreo.webp" data-cap="Terraço do térreo — foto real"><img src="fotos/t/18_terraco_terreo.webp" alt="Terraço do térreo" loading="lazy"><span><i>Foto real</i> · Terraço térreo</span></button><button type="button" data-src="fotos/19_garden_pergolado.webp" data-cap="Garden living com pergolado — foto real"><img src="fotos/t/19_garden_pergolado.webp" alt="Garden living com pergolado" loading="lazy"><span><i>Foto real</i> · Garden</span></button><button type="button" data-src="fotos/20_cafeteria.webp" data-cap="Cafeteria do térreo — foto real"><img src="fotos/t/20_cafeteria.webp" alt="Cafeteria do térreo" loading="lazy"><span><i>Foto real</i> · Cafeteria</span></button><button type="button" data-src="fotos/21_copa.webp" data-cap="Copa coletiva — foto real"><img src="fotos/t/21_copa.webp" alt="Copa coletiva" loading="lazy"><span><i>Foto real</i> · Copa</span></button><button type="button" data-src="fotos/08_terraco_cobertura_2.webp" data-cap="Terraço da cobertura, outro ângulo — foto real"><img src="fotos/t/08_terraco_cobertura_2.webp" alt="Terraço da cobertura, outro ângulo" loading="lazy"><span><i>Foto real</i> · Cobertura</span></button><button type="button" data-src="fotos/15_business_center_lounge.webp" data-cap="Lounge do business center — foto real"><img src="fotos/t/15_business_center_lounge.webp" alt="Lounge do business center" loading="lazy"><span><i>Foto real</i> · Lounge</span></button><button type="button" data-src="fotos/17_sala_reuniao_2.webp" data-cap="Sala de reunião, outro ângulo — foto real"><img src="fotos/t/17_sala_reuniao_2.webp" alt="Sala de reunião, outro ângulo" loading="lazy"><span><i>Foto real</i> · Reunião</span></button><button type="button" data-src="fotos/22_escritorio_referencia_ILUSTRATIVA.webp" data-cap="Referência de acabamento — ilustração"><img src="fotos/t/22_escritorio_referencia_ILUSTRATIVA.webp" alt="Referência de acabamento" loading="lazy"><span><i>Ilustração</i> · Assim pode ficar</span></button><button type="button" data-src="fotos/25_planta_601.webp" data-cap="Planta do pavimento-tipo com a Sala 601 destacada — planta"><img src="fotos/t/25_planta_601.webp" alt="Planta do pavimento-tipo com a Sala 601 destacada" loading="lazy" style="object-position:center 30%"><span><i>Planta</i> · Planta</span></button></div><button class="sarr next" type="button" aria-label="Próximas fotos">›</button></div>
       <p class="strip-hint">Deslize para ver as 20 fotos reais, a referência de acabamento e a planta · toque para ampliar</p>
@@ -705,37 +708,24 @@ function trackContact(origem) {
     const mobile = window.matchMedia("(max-width: 959px)").matches;
     hv.querySelector("source").src = mobile ? "video/sala601_30s_4x5.mp4" : "video/sala601_30s_16x9.mp4";
     const mb = document.getElementById("heroMute");
-    let userMuted = false, inView = true;
-    const label = () => { if (mb) mb.innerHTML = hv.muted ? '<span aria-hidden="true">🔇</span> Ouvir com som' : '<span aria-hidden="true">🔊</span> Silenciar'; };
+    const ICO_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 9.5l4 4m0-4l-4 4" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
+    const ICO_ON  = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
+    const label = () => { if (!mb) return; mb.innerHTML = hv.muted ? ICO_OFF : ICO_ON; mb.setAttribute("aria-label", hv.muted ? "Ouvir com som" : "Silenciar"); mb.title = hv.muted ? "Ouvir com som" : "Silenciar"; mb.classList.toggle("on", !hv.muted); };
     const tryPlay = () => { const p = hv.play(); if (p && p.catch) p.catch(() => {}); };
-    // 1) tenta já com som; se o navegador bloquear o autoplay com áudio, cai para mudo
-    hv.load(); hv.muted = false;
-    const first = hv.play();
-    if (first && first.then) first.then(label, err => { if (!err || err.name === "NotAllowedError") { hv.muted = true; tryPlay(); } label(); }); else label();
-    hv.addEventListener("playing", label, { once: true });
-    // 2) ao primeiro toque/clique em qualquer lugar, liga o som (se o visitante não tiver silenciado)
-    const unlock = () => {
-      if (userMuted || !inView) return;
-      hv.muted = false; if (hv.paused) tryPlay(); label();
-      if (window.gtag) gtag("event", "hero_sound_on", { how: "first_touch" });
-    };
-    ["pointerup", "touchend", "keydown"].forEach(ev => document.addEventListener(ev, function h(e) {
-      if (mb && e.target && mb.contains(e.target)) return;      // o próprio botão trata o som
-      document.removeEventListener(ev, h, true); unlock();
-    }, true));
-    // 3) botão: silenciar / ouvir
+    hv.muted = true; hv.load(); tryPlay(); label();
     if (mb) mb.addEventListener("click", () => {
-      hv.muted = !hv.muted; userMuted = hv.muted; if (hv.paused) tryPlay(); label();
-      if (!hv.muted && window.gtag) gtag("event", "hero_sound_on", { how: "button" });
+      hv.muted = !hv.muted; if (hv.paused) tryPlay(); label();
+      if (!hv.muted && window.gtag) gtag("event", "hero_sound_on");
     });
-    // 4) saiu da tela → pausa (a música para); voltou → toca de novo, no mesmo estado de som
+    // saiu da tela → pausa e desliga o som; voltou → toca mudo (o visitante liga de novo se quiser)
+    let inView = true;
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(en => en.forEach(x => {
         inView = x.intersectionRatio >= 0.35;
-        if (inView) { if (hv.paused) tryPlay(); } else if (!hv.paused) hv.pause();
+        if (inView) { if (hv.paused) tryPlay(); } else { if (!hv.paused) hv.pause(); if (!hv.muted) { hv.muted = true; label(); } }
       }), { threshold: [0, 0.35, 0.6] }).observe(hv);
     }
-    document.addEventListener("visibilitychange", () => { if (document.hidden) hv.pause(); else if (inView) tryPlay(); });
+    document.addEventListener("visibilitychange", () => { if (document.hidden) { hv.pause(); if (!hv.muted) { hv.muted = true; label(); } } else if (inView) tryPlay(); });
   }
   // faixa de fotos: setas rolam uma "página"
   const strip = document.getElementById("galeria-hero");
