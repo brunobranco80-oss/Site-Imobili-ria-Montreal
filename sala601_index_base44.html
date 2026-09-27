@@ -7,11 +7,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sala comercial com vista mar em Boa Viagem — Sala 601, Empresarial João Carvalho | Imobiliária Montreal</title>
-<meta name="description" content="Sala comercial de 46,5 m² com vista para o mar no Empresarial João Carvalho, o edifício corporativo mais novo de Boa Viagem, Recife. 6º andar nascente, 1 vaga, 1ª locação, carência para acabamento negociável. R$ 6.000/mês. Fotos e vídeo reais.">
+<meta name="description" content="Sala comercial de 46,5 m² com vista para o mar no Empresarial João Carvalho, o edifício corporativo mais novo de Boa Viagem, Recife. 6º andar nascente, 1 vaga, 1ª locação. Alugue agora e comece a pagar o aluguel só em janeiro de 2027 (contratos assinados até 31/10). R$ 6.000/mês. Fotos e vídeo reais.">
 <link rel="canonical" href="https://sala601-montreal.base44.app/sala601/index.html">
 <meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Sala 601 · Vista mar · Empresarial João Carvalho — Boa Viagem">
-<meta property="og:description" content="46,5 m² para projetar do zero, no 6º andar, com vista para o mar. Aluguel R$ 6.000/mês, carência negociável. Veja o vídeo real da sala.">
+<meta property="og:description" content="46,5 m² para projetar do zero, no 6º andar, com vista para o mar. Alugue agora e comece a pagar o aluguel só em janeiro de 2027 (contratos até 31/10). R$ 6.000/mês. Veja o vídeo real da sala.">
 <meta property="og:url" content="https://sala601-montreal.base44.app/sala601/index.html"><meta property="og:image" content="https://sala601-montreal.base44.app/sala601/fotos/og_sala601.jpg">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#FAF7F2">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@
   "mainEntity": [
     { "@type": "Question", "name": "Quanto custa alugar a Sala 601 por mês?", "acceptedAnswer": { "@type": "Answer", "text": "O aluguel é de R$ 6.000 por mês. O condomínio é de R$ 1.066,94. À parte ficam a água (individualizada), o IPTU e a taxa de bombeiro, que estão em lançamento por se tratar de um edifício recém-entregue." } },
     { "@type": "Question", "name": "O que significa sala entregue em casco?", "acceptedAnswer": { "@type": "Answer", "text": "A sala é entregue sem acabamento interno: você define divisórias, piso, forro, iluminação e ar-condicionado conforme o projeto do seu escritório. É uma folha em branco, sem herdar a reforma de outro inquilino." } },
-    { "@type": "Question", "name": "Existe carência para fazer o acabamento?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A carência para o acabamento é negociável e definida na proposta, de acordo com o prazo da obra." } },
+    { "@type": "Question", "name": "Como funciona o aluguel só em 2027?", "acceptedAnswer": { "@type": "Answer", "text": "Para contratos assinados até 31/10/2026, o inquilino não paga aluguel até 31/12/2026: nesse período paga apenas o condomínio (R$ 1.066,94), a água pelo consumo e, quando lançados, IPTU e taxa de bombeiro. O aluguel de R$ 6.000 por mês começa em janeiro de 2027." } },
     { "@type": "Question", "name": "Quais garantias são aceitas?", "acceptedAnswer": { "@type": "Answer", "text": "Fiador, seguro-fiança ou caução. A Imobiliária Montreal orienta sobre a opção mais simples para o seu caso." } },
     { "@type": "Question", "name": "Pessoa física pode alugar?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A locação pode ser feita por pessoa física ou jurídica, com análise cadastral." } },
     { "@type": "Question", "name": "A vista para o mar é real?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A foto e o vídeo da página foram feitos da janela da Sala 601 em setembro de 2026, sem edição. A janela é nascente e enquadra o mar de Boa Viagem entre os edifícios da orla." } },
@@ -127,6 +127,16 @@
   .keys{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
   .keys li{background:var(--white);border:1px solid var(--line);border-radius:2rem;padding:.42rem .85rem;font-size:.84rem;font-weight:600;display:flex;align-items:center;gap:.45rem;color:var(--ink-2)}
   .keys li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--sea-2)}
+  .oferta{margin:1.1rem 0 1.2rem;background:var(--sea);color:#fff;border-radius:var(--r-card);padding:1rem 1.2rem;display:grid;gap:.35rem;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .oferta::after{content:"";position:absolute;right:-34px;top:-34px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.08);pointer-events:none}
+  .oferta .o-tag{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#CFE3E8}
+  .oferta b{font-family:var(--ff-display);font-weight:600;font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.15;letter-spacing:-.01em}
+  .oferta .o-sub{font-size:.86rem;color:#E6F0F2;max-width:52ch}
+  .oferta .o-dias{display:inline-flex;align-items:center;gap:.45rem;margin-top:.35rem;font-size:.76rem;font-weight:700;background:rgba(255,255,255,.14);border-radius:2rem;padding:.3rem .75rem;width:max-content}
+  .oferta .o-dias::before{content:"";width:8px;height:8px;border-radius:50%;background:#FF6B57;animation:pulse 1.6s infinite}
+  .o-off{display:none}
+  .oferta-encerrada .oferta,.oferta-encerrada .o-on{display:none!important}
+  .oferta-encerrada .o-off{display:inline}
   .pricebox{background:var(--white);border:1px solid var(--line);border-radius:var(--r-card);padding:1.2rem 1.4rem;display:grid;gap:.8rem;box-shadow:var(--shadow);position:relative;overflow:hidden}
   .pricebox::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}
   @media(min-width:560px){.pricebox{grid-template-columns:auto 1fr;align-items:center;gap:1.4rem}}
@@ -367,11 +377,12 @@
     <div>
       <span class="tagline">1ª locação · direto com a proprietária</span>
       <h1>Sala comercial com vista para o mar em Boa Viagem</h1>
-      <p class="lead">Sala 601 do Empresarial João Carvalho, o edifício corporativo mais novo do bairro. 46,5 m² em casco para você projetar o escritório do seu jeito, com carência para o acabamento.</p>
+      <p class="lead">Sala 601 do Empresarial João Carvalho, o edifício corporativo mais novo do bairro. 46,5 m² em casco para você projetar o escritório do seu jeito, com tempo para a obra sem pagar aluguel.</p>
+      <div class="oferta" id="oferta" role="note"><span class="o-tag">Oferta de lançamento</span><b>Alugue agora e comece a pagar o aluguel só em janeiro de 2027</b><span class="o-sub">Para contratos assinados até 31 de outubro. Até lá, você paga só o condomínio (R$ 1.066,94) — e usa os meses sem aluguel para fazer a obra do seu jeito.</span><span class="o-dias" id="oferta-dias"></span></div>
       <ul class="keys"><li>46,5 m² privativos</li><li>6º andar · vista mar · nascente</li><li>1 vaga de garagem</li><li>Banheiro privativo</li><li>Fotos e vídeo reais</li></ul>
       <div class="pricebox">
         <div class="v">R$ 6.000<small>/mês</small></div>
-        <div class="d">+ condomínio de <b>R$ 1.066,94</b> · água individualizada, IPTU e bombeiro à parte · <b>carência para acabamento negociável</b> · fiador, seguro-fiança ou caução</div>
+        <div class="d"><span class="o-on"><b>Aluguel só a partir de janeiro de 2027</b> para contratos assinados até 31/10 — até lá, só o condomínio de <b>R$ 1.066,94</b></span><span class="o-off">+ condomínio de <b>R$ 1.066,94</b> · <b>carência para acabamento negociável</b></span> · água individualizada, IPTU e bombeiro à parte · fiador, seguro-fiança ou caução</div>
       </div>
       <div class="cta">
         <a class="btn wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>Agendar visita no WhatsApp</a>
@@ -459,14 +470,14 @@
     <div>
       <span class="tagline">Antes e depois</span>
       <h2>Do casco ao escritório pronto em 23 segundos</h2>
-      <p style="color:var(--ink-2)">A foto real da sala vira o projeto — forro, iluminação, divisórias, piso — e termina no escritório com a vista para o mar. É o caminho que o casco permite: você decide cada acabamento, e a carência para a obra é negociada na proposta.</p>
+      <p style="color:var(--ink-2)">A foto real da sala vira o projeto — forro, iluminação, divisórias, piso — e termina no escritório com a vista para o mar. É o caminho que o casco permite: você decide cada acabamento<span class="o-on"> — e, fechando até 31 de outubro, só começa a pagar o aluguel em janeiro de 2027: tempo de sobra para a obra</span><span class="o-off">, e a carência para a obra é negociada na proposta</span>.</p>
       <ul class="keys" style="margin:1rem 0 .4rem">
         <li>Você define piso, forro e divisórias</li>
         <li>Instalações prontas para split e rede</li>
-        <li>Carência para o acabamento negociável</li>
+        <li><span class="o-on">Sem aluguel até dezembro: tempo para a obra</span><span class="o-off">Carência para o acabamento negociável</span></li>
       </ul>
       <p class="small">A cena final é uma imagem ilustrativa de acabamento de referência; a sala é entregue em casco.</p>
-      <a class="btn wa" data-wa href="#" target="_blank" rel="noopener" style="margin-top:.8rem"><svg><use href="#i-chat"/></svg>Quero conversar sobre a carência</a>
+      <a class="btn wa" data-wa href="#" target="_blank" rel="noopener" style="margin-top:.8rem"><svg><use href="#i-chat"/></svg><span class="o-on">Quero garantir o aluguel só em 2027</span><span class="o-off">Quero conversar sobre a carência</span></a>
     </div>
   </div>
 </section>
@@ -494,7 +505,7 @@
         <div><dt>Condomínio</dt><dd>R$ 1.066,94</dd></div>
         <div><dt>Água</dt><dd>Individualizada, pelo consumo</dd></div>
         <div><dt>IPTU e taxa de bombeiro</dt><dd>Em lançamento (prédio novo)</dd></div>
-        <div><dt>Carência para o acabamento</dt><dd class="ok">Negociável na proposta</dd></div>
+        <div><dt><span class="o-on">Início do aluguel</span><span class="o-off">Carência para o acabamento</span></dt><dd class="ok"><span class="o-on">Janeiro de 2027 (contratos assinados até 31/10) — até lá, só o condomínio</span><span class="o-off">Negociável na proposta</span></dd></div>
         <div><dt>Garantias</dt><dd>Fiador · seguro-fiança · caução</dd></div>
         <div><dt>Quem pode alugar</dt><dd>Pessoa física ou jurídica</dd></div>
       </dl>
@@ -608,9 +619,9 @@
   <div class="wrap">
     <div class="sec-head"><h2>Perguntas frequentes</h2><p class="muted">O que os interessados costumam perguntar antes da visita.</p></div>
     <div class="faq">
-      <details><summary>Quanto fica o custo total por mês?</summary><div><p>Aluguel de R$ 6.000 mais condomínio de R$ 1.066,94. À parte ficam a água (individualizada, pelo consumo), o IPTU e a taxa de bombeiro — que estão em lançamento porque o edifício acabou de ser entregue. A equipe informa os valores atualizados na proposta.</p></div></details>
+      <details><summary>Quanto fica o custo total por mês?</summary><div><p><span class="o-on">Até 31 de dezembro de 2026 (contratos assinados até 31/10): só o condomínio de R$ 1.066,94. A partir de janeiro de 2027: aluguel de R$ 6.000 mais o condomínio.</span><span class="o-off">Aluguel de R$ 6.000 mais condomínio de R$ 1.066,94.</span> À parte ficam a água (individualizada, pelo consumo), o IPTU e a taxa de bombeiro — que estão em lançamento porque o edifício acabou de ser entregue. A equipe informa os valores atualizados na proposta.</p></div></details>
       <details><summary>O que significa "entregue em casco"?</summary><div><p>A sala vem sem acabamento interno: você define divisórias, piso, forro, iluminação e ar-condicionado de acordo com o projeto do seu escritório. É uma folha em branco — sem herdar a reforma de outro inquilino.</p></div></details>
-      <details><summary>Existe carência para fazer o acabamento?</summary><div><p>Sim. A carência é negociável e definida na proposta, de acordo com o prazo da obra.</p></div></details>
+      <details><summary><span class="o-on">Como funciona o "aluguel só em 2027"?</span><span class="o-off">Existe carência para fazer o acabamento?</span></summary><div><p><span class="o-on">Fechando o contrato até 31 de outubro de 2026, você não paga aluguel até 31 de dezembro: nesse período paga só o condomínio (R$ 1.066,94), a água pelo consumo e, quando lançados, IPTU e taxa de bombeiro. O aluguel de R$ 6.000 começa em janeiro de 2027. É a carência para a obra já definida — sem precisar negociar. Quanto antes fechar, mais meses sem aluguel.</span><span class="o-off">Sim. A carência é negociável e definida na proposta, de acordo com o prazo da obra.</span></p></div></details>
       <details><summary>Quanto custa acabar o casco?</summary><div><p>Depende do padrão e do layout. Se quiser, a Montreal indica arquiteto e empreiteiro de confiança para você ter uma estimativa antes de fechar.</p></div></details>
       <details><summary>A vista para o mar é real?</summary><div><p>Sim. A foto e o vídeo desta página foram feitos da janela da Sala 601 em setembro de 2026, sem edição. A janela é nascente e enquadra o mar de Boa Viagem entre os edifícios da orla — você confere a mesma vista na visita.</p></div></details>
       <details><summary>Quantas pessoas cabem na sala?</summary><div><p>Com 46,5 m², a sala acomoda com conforto equipes de 4 a 8 pessoas, dependendo do layout — por exemplo, recepção, sala de reunião e dois ambientes de trabalho.</p></div></details>
@@ -628,7 +639,7 @@
     <div>
       <span class="tagline">Visitas com horário marcado</span>
       <h2>Vamos marcar a sua visita?</h2>
-      <p style="color:#D7DBDF">Em 20 minutos você conhece o lobby, as áreas comuns e sobe até a 601 para ver a vista com os próprios olhos. Proposta por escrito no mesmo dia.</p>
+      <p style="color:#D7DBDF">Em 20 minutos você conhece o lobby, as áreas comuns e sobe até a 601 para ver a vista com os próprios olhos. Proposta por escrito no mesmo dia<span class="o-on"> — e, fechando até 31 de outubro, o aluguel só começa em janeiro de 2027</span>.</p>
       <div class="cta"><a class="btn wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>Agendar visita no WhatsApp</a><a class="btn ghost" style="color:#fff;border-color:#fff" href="tel:+5581999962772">Ligar (81) 99996-2772</a></div>
     </div>
     <img src="fotos/t/07_terraco_cobertura_mar.webp" alt="Terraço da cobertura do edifício com vista para o mar, foto real" loading="lazy">
@@ -644,14 +655,14 @@
 </div></footer>
 
 <a class="fab" data-wa href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="#062A14"><use href="#i-chat"/></svg></a>
-<div class="bar" role="region" aria-label="Contato rápido"><div class="p"><b>R$ 6.000/mês</b><span>Sala 601 · 46,5 m² · vista mar</span></div><a class="btn wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>WhatsApp</a></div>
+<div class="bar" role="region" aria-label="Contato rápido"><div class="p"><b><span class="o-on">Aluguel só em 2027</span><span class="o-off">R$ 6.000/mês</span></b><span><span class="o-on">R$ 6.000/mês a partir de janeiro · </span>Sala 601 · 46,5 m²</span></div><a class="btn wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>WhatsApp</a></div>
 <div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button type="button" class="x" aria-label="Fechar">×</button><button type="button" class="prev" aria-label="Foto anterior">‹</button><img src="" alt=""><button type="button" class="next" aria-label="Próxima foto">›</button><div class="cap"></div></div>
 <script>
 /* ========= CONFIGURAÇÃO (webmaster preenche aqui) ========= */
 const CONFIG = {
   SITE_URL: "https://sala601-montreal.base44.app/sala601/index.html",
   WHATSAPP: "5581999962772",
-  WA_TEXT: "Olá! Vi a Sala 601 do Empresarial João Carvalho e gostaria de mais informações.",
+  WA_TEXT: "Olá! Vi a Sala 601 do Empresarial João Carvalho (aluguel só a partir de janeiro de 2027) e gostaria de mais informações.",
   META_PIXEL_ID: "",      // ex.: "1234567890123456"  (Meta Ads → Gerenciador de Eventos)
   GA4_ID: "",             // ex.: "G-XXXXXXXXXX"      (Google Analytics 4)
   GADS_CONVERSION: "",    // ex.: "AW-123456789/AbCdEfGhIjKlMnOp" (Google Ads → Conversões → "Clique WhatsApp")
@@ -798,6 +809,13 @@ document.querySelectorAll(".tab").forEach(tab => {
 })();
 
 document.getElementById("ano").textContent = new Date().getFullYear();
+/* ========= OFERTA "ALUGUEL SÓ EM 2027" (válida para contratos assinados até 31/10/2026) ========= */
+(function () {
+  const fim = new Date(2026, 9, 31, 23, 59, 59), hoje = new Date();
+  const dias = Math.ceil((fim - hoje) / 86400000), el = document.getElementById("oferta-dias");
+  if (dias < 0) { document.documentElement.classList.add("oferta-encerrada"); return; }
+  if (el) el.textContent = dias === 0 ? "Último dia: 31 de outubro" : dias === 1 ? "Falta 1 dia para 31 de outubro" : "Faltam " + dias + " dias para 31 de outubro";
+})();
 
 /* ========= FORMULÁRIO → WHATSAPP (modelo C) ========= */
 (function(){
@@ -806,7 +824,7 @@ document.getElementById("ano").textContent = new Date().getFullYear();
     e.preventDefault();
     const nome=f.nome.value.trim(), ramo=f.ramo.value, prazo=f.prazo.value, pessoas=f.pessoas.value;
     const src=(new URLSearchParams(location.search).get('utm_source')||'').toLowerCase();
-    let txt='Olá! Vi a Sala 601 do Empresarial João Carvalho e quero agendar uma visita.';
+    let txt='Olá! Vi a Sala 601 do Empresarial João Carvalho e quero agendar uma visita. Tenho interesse na condição de aluguel só a partir de janeiro de 2027.';
     if(nome) txt+=' Meu nome é '+nome+'.';
     if(ramo) txt+=' Ramo: '+ramo+'.';
     if(pessoas) txt+=' Equipe: '+pessoas+'.';
