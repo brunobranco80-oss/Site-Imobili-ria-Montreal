@@ -328,7 +328,8 @@
   .bar .btn{padding:.8rem 1.1rem;font-size:.9rem}
   @media(min-width:760px){.bar{display:none}}
 
-  .lb{position:fixed;inset:0;z-index:100;background:rgba(28,26,23,.96);display:none;align-items:center;justify-content:center;padding:1rem}
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(28,26,23,.96);display:none;align-items:center;justify-content:center;padding:1rem;touch-action:pan-y pinch-zoom}
+  .lb img{will-change:transform}
   .lb[data-open]{display:flex}
   .lb img{max-width:min(96vw,1200px);max-height:84vh;object-fit:contain;border-radius:.4rem}
   .lb .cap{position:absolute;left:0;right:0;bottom:1.2rem;text-align:center;font-size:.9rem;color:#ddd}
@@ -751,16 +752,34 @@ document.querySelectorAll(".tab").forEach(tab => {
   const lb = document.getElementById("lightbox"), img = lb.querySelector("img"), cap = lb.querySelector(".cap");
   const items = Array.from(document.querySelectorAll("#galeria button, #galeria-hero button, .sala-grid figure, .vista figure"));
   const data = items.map(el => el.tagName === "BUTTON" ? { src: el.dataset.src, cap: el.dataset.cap } : { src: el.querySelector("img").getAttribute("src").replace("fotos/t/", "fotos/"), cap: el.querySelector("figcaption").textContent.trim() });
-  let i = 0, last = null;
-  function show(n) { i = (n + data.length) % data.length; img.src = data[i].src; img.alt = data[i].cap; cap.textContent = data[i].cap; }
-  function open(n, el) { last = el; show(n); lb.setAttribute("data-open", ""); document.body.style.overflow = "hidden"; lb.querySelector(".x").focus(); }
+  let i = 0, last = null, gidx = [];
+  const grp = items.map(el => el.closest("#galeria, #galeria-hero, .sala-grid, .vista") || document.body);
+  function nb(d) { const p = gidx.indexOf(i); return gidx[(p + d + gidx.length) % gidx.length]; }
+  function show(n) { i = (n + data.length) % data.length; img.src = data[i].src; img.alt = data[i].cap; cap.textContent = data[i].cap + "  ·  " + (gidx.indexOf(i) + 1) + "/" + gidx.length; img.style.transform = ""; img.style.opacity = "1";
+    [1, -1].forEach(d => { const p = new Image(); p.src = data[nb(d)].src; }); }
+  function open(n, el) { last = el; gidx = items.map((_, k) => k).filter(k => grp[k] === grp[n]); show(n); lb.setAttribute("data-open", ""); document.body.style.overflow = "hidden"; lb.querySelector(".x").focus(); }
   function close() { lb.removeAttribute("data-open"); document.body.style.overflow = ""; if (last) last.focus(); }
   items.forEach((el, n) => { el.style.cursor = "zoom-in"; if (el.tagName !== "BUTTON") el.setAttribute("tabindex", "0"); el.addEventListener("click", () => open(n, el)); el.addEventListener("keydown", e => { if (el.tagName !== "BUTTON" && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); open(n, el); } }); });
   lb.querySelector(".x").addEventListener("click", close);
-  lb.querySelector(".prev").addEventListener("click", () => show(i - 1));
-  lb.querySelector(".next").addEventListener("click", () => show(i + 1));
+  lb.querySelector(".prev").addEventListener("click", () => show(nb(-1)));
+  lb.querySelector(".next").addEventListener("click", () => show(nb(1)));
   lb.addEventListener("click", e => { if (e.target === lb) close(); });
-  document.addEventListener("keydown", e => { if (!lb.hasAttribute("data-open")) return; if (e.key === "Escape") close(); if (e.key === "ArrowLeft") show(i - 1); if (e.key === "ArrowRight") show(i + 1); });
+  document.addEventListener("keydown", e => { if (!lb.hasAttribute("data-open")) return; if (e.key === "Escape") close(); if (e.key === "ArrowLeft") show(nb(-1)); if (e.key === "ArrowRight") show(nb(1)); });
+  // deslize (touch): para o lado troca a foto com animação; para baixo fecha
+  let sx = 0, sy = 0, dx = 0, dy = 0, drag = false;
+  lb.addEventListener("touchstart", e => { if (e.touches.length !== 1) return; sx = e.touches[0].clientX; sy = e.touches[0].clientY; dx = dy = 0; drag = true; img.style.transition = "none"; }, { passive: true });
+  lb.addEventListener("touchmove", e => { if (!drag || e.touches.length !== 1) return; dx = e.touches[0].clientX - sx; dy = e.touches[0].clientY - sy; if (Math.abs(dx) > Math.abs(dy)) img.style.transform = "translateX(" + dx + "px)"; }, { passive: true });
+  lb.addEventListener("touchend", () => {
+    if (!drag) return; drag = false; img.style.transition = "transform .18s ease, opacity .18s ease";
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+      const dir = dx < 0 ? 1 : -1;
+      img.style.transform = "translateX(" + (-dir * 90) + "px)"; img.style.opacity = "0";
+      setTimeout(() => { show(nb(dir)); img.style.transition = "none"; img.style.transform = "translateX(" + (dir * 70) + "px)"; img.style.opacity = "0";
+        requestAnimationFrame(() => { img.style.transition = "transform .18s ease, opacity .18s ease"; img.style.transform = ""; img.style.opacity = "1"; }); }, 170);
+    } else if (dy > 90 && dy > Math.abs(dx)) close();
+    else img.style.transform = "";
+  });
+  lb.addEventListener("touchcancel", () => { drag = false; img.style.transform = ""; });
 })();
 
 document.getElementById("ano").textContent = new Date().getFullYear();
