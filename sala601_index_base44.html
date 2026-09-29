@@ -10,7 +10,7 @@
 <meta name="description" content="Sala comercial de 46,5 m² com vista para o mar no Empresarial João Carvalho, edifício corporativo recém-entregue em Boa Viagem, Recife – PE. 6º andar nascente, 1 vaga, 1ª locação. Alugue agora e comece a pagar o aluguel só em janeiro de 2027 (contratos assinados até 31/10). R$ 6.000/mês. Fotos e vídeo reais.">
 <link rel="canonical" href="https://sala601-imobiliaria-montreal.base44.app/sala601/index.html">
 <meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Seu escritório com vista para o mar no empresarial boutique de Boa Viagem · Sala 601 · Recife – PE">
+<meta property="og:title" content="Trabalhe com vista para o mar no empresarial boutique de Boa Viagem · Sala 601 · Recife – PE">
 <meta property="og:description" content="46,5 m² para projetar do zero, no 6º andar, com vista para o mar. Alugue agora e comece a pagar o aluguel só em janeiro de 2027 (contratos até 31/10). R$ 6.000/mês. Veja o vídeo real da sala.">
 <meta property="og:url" content="https://sala601-imobiliaria-montreal.base44.app/sala601/index.html"><meta property="og:image" content="https://sala601-imobiliaria-montreal.base44.app/sala601/fotos/og_sala601.jpg">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#FAF7F2">
@@ -401,6 +401,15 @@
 
   /* linha logo abaixo do título principal */
   .hero .h1-sub{margin:.75rem 0 0;font-size:clamp(.92rem,1.4vw,1.05rem);font-weight:600;color:var(--ink-2);letter-spacing:.01em}
+
+  /* título simétrico: linhas equilibradas e centralizadas */
+  .hero h1,.hero .h1-sub,.hero .lead{text-wrap:balance}
+  @media(min-width:960px){.hero h1{font-size:clamp(2.5rem,4.4vw,3.9rem)}}
+  .hero .wrap>div:first-child{text-align:center}
+    .hero .wrap>div:first-child .tagline{text-align:center;justify-content:center}
+    .hero .wrap>div:first-child .tagline::before{display:none}
+    .hero .wrap>div:first-child .lead{margin-inline:auto}
+    .hero .keys,.hero .cta{justify-content:center}
 </style>
 </head>
 <body>
@@ -424,9 +433,9 @@
   <div class="wrap">
     <div>
       <span class="tagline">1ª locação · direto com a proprietária</span>
-      <h1>Seu escritório com vista para o mar no empresarial boutique de <span style="white-space:nowrap">Boa Viagem</span></h1>
+      <h1 id="hero-titulo">Trabalhe com vista para o mar no empresarial boutique de <span style="white-space:nowrap">Boa Viagem</span></h1>
       <p class="h1-sub">Sala comercial de 46,5 m² · Empresarial João Carvalho · <span style="white-space:nowrap">Boa Viagem, Recife – PE</span></p>
-      <p class="lead">A Sala 601 fica em um edifício corporativo recém-entregue: são 46,5 m² em casco para você projetar o escritório do seu jeito<span class="o-on">, com tempo para a obra sem pagar aluguel</span><span class="o-off">, com carência negociável para a obra</span>.</p>
+      <p class="lead">A Sala 601 fica em um edifício corporativo recém-entregue: são 46,5 m² em casco para você projetar o espaço do seu jeito<span class="o-on">, com tempo para a obra sem pagar aluguel</span><span class="o-off">, com carência negociável para a obra</span>.</p>
       <ul class="keys"><li>46,5 m² privativos</li><li>6º andar · vista mar · nascente</li><li>1 vaga de garagem</li><li>Banheiro privativo</li><li>Fotos e vídeo reais</li></ul>
       <div class="pricebox">
         <div class="v">R$ 6.000<small>/mês</small></div>
@@ -978,6 +987,19 @@ document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',(
     a.href = "https://wa.me/" + CONFIG.WHATSAPP + "?text=" + encodeURIComponent(txt);
     a.addEventListener("click", () => { if (typeof trackContact === "function") trackContact("escritorio-" + nk); });
   });
+})();
+
+/* ========= TÍTULO POR PROFISSÃO (?nicho= ou utm_content) ========= */
+(function () {
+  const h = document.getElementById("hero-titulo"); if (!h) return;
+  const q = new URLSearchParams(location.search);
+  const n = (q.get("nicho") || q.get("utm_content") || "").toLowerCase();
+  const fim = ' com vista para o mar no empresarial boutique de <span style="white-space:nowrap">Boa Viagem</span>';
+  const t = [["advoca","Seu escritório de advocacia"],["advog","Seu escritório de advocacia"],["jurid","Seu escritório de advocacia"],
+             ["psico","Seu consultório"],["terap","Seu consultório"],["medic","Seu consultório"],["clinic","Sua clínica"],["saude","Seu consultório"],
+             ["consult","Sua consultoria"],["financ","Sua consultoria"],["contab","Seu escritório de contabilidade"],
+             ["corpor","Seu escritório"],["empresa","Seu escritório"]].find(x => n.includes(x[0]));
+  if (t) h.innerHTML = t[1] + fim;
 })();
 </script>
 </body>
