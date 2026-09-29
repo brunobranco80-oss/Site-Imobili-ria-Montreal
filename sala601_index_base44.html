@@ -384,6 +384,20 @@
   @media(min-width:900px){#video .tour-grid{grid-template-columns:minmax(0,1fr) minmax(0,380px);gap:3.5rem;align-items:center}}
   .predio-video.vert-grid .video-box.vert{max-width:340px}
   @media(min-width:900px){.predio-video.vert-grid{grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:2.5rem}}
+
+  /* oferta abaixo do vídeo e das fotos, antes da vista real */
+  .oferta-band{background:var(--paper);padding:clamp(1.6rem,4vw,2.6rem) 0 0}
+  .oferta-band .oferta{margin:0}
+  @media(min-width:960px){.oferta-band .oferta{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:2.6rem;align-items:center;padding:1.5rem 2rem}
+    .oferta-band .o-tag{grid-column:1}.oferta-band .oferta b{grid-column:1;font-size:1.65rem}
+    .oferta-band .o-sub{grid-column:2;grid-row:1/3;align-self:center}.oferta-band .o-dias{grid-column:2;grid-row:3}}
+  .oferta-encerrada .oferta-band{display:none!important}
+  /* computador: bloco do vídeo + fotos com a mesma altura do bloco do título */
+  @media(min-width:1200px){
+    .hero .wrap{align-items:stretch}
+    .photo-card{grid-template-rows:minmax(0,1fr) auto auto}
+    .photo-card .vid{aspect-ratio:auto;min-height:420px}
+  }
 </style>
 </head>
 <body>
@@ -409,7 +423,6 @@
       <span class="tagline">1ª locação · direto com a proprietária</span>
       <h1>Sala comercial com vista para o mar em Boa Viagem</h1>
       <p class="lead">Sala 601 do Empresarial João Carvalho, edifício corporativo recém-entregue em Boa Viagem. 46,5 m² em casco para você projetar o escritório do seu jeito<span class="o-on">, com tempo para a obra sem pagar aluguel</span><span class="o-off">, com carência negociável para a obra</span>.</p>
-      <div class="oferta" id="oferta" role="note"><span class="o-tag">Oferta de lançamento</span><b>Alugue agora e comece a pagar o aluguel só em janeiro de 2027</b><span class="o-sub">Para contratos assinados até 31 de outubro. Até dezembro, você paga só o condomínio (R$ 1.066,94) — e usa os meses sem aluguel para fazer a obra do seu jeito.</span><span class="o-dias" id="oferta-dias"></span></div>
       <ul class="keys"><li>46,5 m² privativos</li><li>6º andar · vista mar · nascente</li><li>1 vaga de garagem</li><li>Banheiro privativo</li><li>Fotos e vídeo reais</li></ul>
       <div class="pricebox">
         <div class="v">R$ 6.000<small>/mês</small></div>
@@ -433,6 +446,12 @@
     </div>
   </div>
 </section>
+
+<div class="oferta-band">
+  <div class="wrap">
+    <div class="oferta" id="oferta" role="note"><span class="o-tag">Oferta de lançamento</span><b>Alugue agora e comece a pagar o aluguel só em janeiro de 2027</b><span class="o-sub">Para contratos assinados até 31 de outubro. Até dezembro, você paga só o condomínio (R$ 1.066,94) — e usa os meses sem aluguel para fazer a obra do seu jeito.</span><span class="o-dias" id="oferta-dias"></span></div>
+  </div>
+</div>
 
 <section class="vista" id="vista" aria-label="A vista real da sala">
   <div class="wrap">
@@ -780,11 +799,12 @@ function trackContact(origem) {
 
 /* ========= VÍDEOS ========= */
 (function () {
-  // hero: 4:5 no celular, 16:9 no desktop (troca só uma vez, no carregamento)
+  // hero: 4:5 no celular, vídeo alto no computador (≥1200px), 16:9 entre 960 e 1199px (troca só uma vez, no carregamento)
   const hv = document.getElementById("heroVideo");
   if (hv) {
     const mobile = window.matchMedia("(max-width: 959px)").matches;
-    hv.querySelector("source").src = mobile ? "video/sala601_30s_4x5.mp4" : "video/sala601_30s_16x9.mp4";
+    const alto = window.matchMedia("(min-width: 1200px)").matches; // computador: vídeo alto, da altura do bloco do título
+    hv.querySelector("source").src = mobile ? "video/sala601_30s_4x5.mp4" : (alto ? "video/sala601_30s_desk.mp4" : "video/sala601_30s_16x9.mp4");
     const mb = document.getElementById("heroMute");
     const ICO_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 9.5l4 4m0-4l-4 4" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
     const ICO_ON  = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
