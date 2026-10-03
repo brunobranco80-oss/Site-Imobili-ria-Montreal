@@ -61,7 +61,6 @@ Fotos_Portais_v3/27_fachada_noite_ILUSTRATIVA.jpg
 Fotos_Portais_v3/28_fachada_dia_ILUSTRATIVA.jpg
 Fotos_Portais_v3/29_planta_601.jpg
 Fotos_Portais_v3/LEIA-ME.txt
-LISTA_DE_ARQUIVOS.txt
 Plano_Divulgacao_Sala601_v2_R5000.md
 README_Videos_v5_R5000.md
 RESUMO_para_o_Projeto_Sala601.md
