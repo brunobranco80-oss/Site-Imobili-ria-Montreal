@@ -43,6 +43,7 @@ para você saber de qual anúncio veio cada contato):
 
 ======================================================================
 2) TEXTOS DOS ANÚNCIOS (versão A e versão B para teste)
+   Limites do Meta: título até 40 caracteres, descrição até 30 (os daqui já cabem).
 ======================================================================
 
 ---------- A. PRINCIPAL ----------
@@ -50,8 +51,8 @@ Texto principal (A):
 Sala comercial com vista para o mar em Boa Viagem, Recife – PE. A Sala 601 do Empresarial João Carvalho tem 46,5 m² prontos para o seu projeto. Feche até 31/10 e só pague aluguel em janeiro de 2027. Até lá, apenas o condomínio.
 Texto principal (B):
 Seu escritório com vista para o mar, em um empresarial novo de Boa Viagem, Recife – PE. Contrato assinado até 31/10 = aluguel só a partir de janeiro de 2027. Chame no WhatsApp e agende a visita.
-Título: Sala 601 vista mar · Boa Viagem, Recife-PE
-Descrição: R$ 5.000,00/mês · aluguel só em janeiro/2027
+Título: Sala 601 · vista mar · Boa Viagem
+Descrição: Aluguel R$ 5.000,00 só em 2027
 Botão: Enviar mensagem pelo WhatsApp
 Rodapé do texto: *Imagens ilustrativas de decoração. A sala é entregue em casco.
 
@@ -61,7 +62,7 @@ Advogado(a), seu escritório com vista para o mar em Boa Viagem, Recife – PE. 
 Texto principal (B):
 Endereço de prestígio para receber seus clientes: Sala 601, Empresarial João Carvalho, Boa Viagem, Recife – PE. Vista para o mar e aluguel só a partir de janeiro de 2027 para contratos até 31/10.
 Título: Escritório de advocacia com vista mar
-Descrição: Boa Viagem, Recife-PE · aluguel só em jan/2027
+Descrição: Aluguel só em janeiro de 2027
 Botão: Enviar mensagem pelo WhatsApp
 Rodapé: *Imagem ilustrativa de decoração. A sala é entregue em casco.
 Interesses (para o 2º conjunto, se advocacia se destacar): Advocacia, Direito, Ordem dos Advogados do Brasil, Direito empresarial, Direito civil, Jusbrasil.
@@ -72,7 +73,7 @@ Psicólogo(a), que tal atender com vista para o mar? A Sala 601, em Boa Viagem, 
 Texto principal (B):
 Um consultório calmo e reservado, com luz natural e vista para o mar, no Empresarial João Carvalho, em Boa Viagem, Recife – PE. Contrato até 31/10: aluguel só a partir de janeiro de 2027.
 Título: Seu consultório com vista mar
-Descrição: Boa Viagem, Recife-PE · aluguel só em jan/2027
+Descrição: Aluguel só em janeiro de 2027
 Botão: Enviar mensagem pelo WhatsApp
 Rodapé: *Imagem ilustrativa de decoração. A sala é entregue em casco.
 Interesses: Psicologia, Psicoterapia, Terapia cognitivo-comportamental, Psicanálise, Conselho Federal de Psicologia, Saúde mental.
@@ -83,7 +84,7 @@ Sua consultoria com vista para o mar em Boa Viagem, Recife – PE. 46,5 m² para
 Texto principal (B):
 Contabilidade, finanças ou consultoria: leve sua equipe para um empresarial novo em Boa Viagem, Recife – PE, com vista para o mar. Aluguel só a partir de janeiro de 2027 para contratos até 31/10.
 Título: Escritório para a sua equipe, vista mar
-Descrição: Boa Viagem, Recife-PE · aluguel só em jan/2027
+Descrição: Aluguel só em janeiro de 2027
 Botão: Enviar mensagem pelo WhatsApp
 Rodapé: *Imagem ilustrativa de decoração. A sala é entregue em casco.
 Interesses: Consultoria empresarial, Contabilidade, Gestão financeira, Empreendedorismo, Pequenas e médias empresas, Tecnologia da informação.

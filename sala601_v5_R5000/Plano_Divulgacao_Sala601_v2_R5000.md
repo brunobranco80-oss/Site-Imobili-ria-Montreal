@@ -4,6 +4,8 @@ Sep 29, 2026 · @Bruno Arcuri Branco · **revisado em 03/10/2026**
 
 > **O que mudou em 03/10:** o aluguel passou de R$ 6.000,00 para **R$ 5.000,00/mês** (condomínio continua R$ 1.066,94; a oferta "aluguel só em janeiro de 2027 para contratos até 31/10" continua). Landing já atualizada e no ar. Todas as peças foram refeitas com o preço novo e o endereço novo do site: carrosséis e Stories por profissão (pasta `Sala601_Gemini`), vídeos do site, e o **pacote v5** (`Sala601_v5_R5000`: anúncios, carrossel de 9 slides em PNG e PDF, capa do YouTube e vídeos V1–V9 com o cartão final novo). As peças "v4" e os vídeos antigos do Dropbox mostram R$ 6.000 e o endereço velho: **não usar**.
 >
+> **Calendário ajustado em 03/10 (sábado):** como nada foi publicado ainda, as etapas de preparação passam para este fim de semana: **sáb 03/10** contas do Meta (Etapa 1), Pixel (Etapa 2) e atendimento (Etapa 7a) · **dom 04/10** Instagram (bio, carrossel Principal, Reel do tour, Stories), YouTube (Etapa 5) e portais (Etapa 6) · **seg 05/10** Instagram (Advocacia), campanha do Google montada (Etapa 4, início ter 06/10) e campanha do Meta montada (Etapa 8, início qua 07/10, 8h) · **ter 06/10** Google no ar, Instagram (Psicologia + Reel do prédio), mensagem aos corretores (7b) · **qua 07/10** Meta no ar, Instagram (Consultoria). A semana 1 fica um dia mais curta no Google e dois no Meta (sobra cerca de R$ 60,00, que entra na semana 2). O resto do calendário (ChatGPT 12 a 25/10, segundas de revisão, decisão de 1º/11) não muda.
+>
 > **Fotos e vídeos de 02/10 (aplicados em 03/10):** a vista nova (praia, mar e coqueiros) entrou na landing, nos carrosséis, nos Stories, na capa dos portais e nos vídeos; a abertura do tour agora é a entrada real do prédio (no lugar do render); catracas, corredor do 6º andar, banheiro e a sala vista do fundo entraram nos portais e na landing. As fotos dos portais passaram a ser 29 (`Fotos_Portais_v3`).
 
 Vamos anunciar em 6 frentes — Instagram e Facebook, Google, YouTube, ChatGPT, portais e corretores — com R$ 300,00 por semana a partir de segunda, Oct 5, 2026. Até lá, a semana 0 deixa as contas e os perfis prontos. Cada etapa: você faz, me confirma, e só então passamos para a próxima.
@@ -14,8 +16,8 @@ O pago fica em três lugares (Meta, Google e, por duas semanas, ChatGPT); o rest
 
 | Plataforma | Pago? | Quando entra | Para quê | Peças |
 | --- | --- | --- | --- | --- |
-| Instagram e Facebook (Meta) | Sim | Terça, 06/10 | Achar quem ainda não está procurando sala e levar direto para o WhatsApp | 4 carrosséis por profissão + Stories |
-| Google (pesquisa) | Sim | Segunda, 05/10 | Aparecer para quem digita "sala comercial Boa Viagem" | Só texto (pronto na Etapa 4) |
+| Instagram e Facebook (Meta) | Sim | Quarta, 07/10 | Achar quem ainda não está procurando sala e levar direto para o WhatsApp | 4 carrosséis por profissão + Stories |
+| Google (pesquisa) | Sim | Terça, 06/10 | Aparecer para quem digita "sala comercial Boa Viagem" | Só texto (pronto na Etapa 4) |
 | ChatGPT | Sim, teste | 12 a 25/10 | Testar um canal novo com pouco dinheiro | Anúncio da oferta 1:1 |
 | YouTube | Não (opcional pago depois) | Semana 0 | Guardar o tour em vídeo e dar o link para portais e site | Tour 16:9 + 2 Shorts |
 | Instagram orgânico | Não | Semana 0 | Perfil cheio antes do anúncio: quem clica olha o perfil | Carrosséis, Stories, 2 Reels |
@@ -34,18 +36,18 @@ São R$ 300,00 por semana, sempre: até o fim da oferta (01/11) dá R$ 1.200,00.
 | Reserva (impostos na fatura do Meta, cerca de 12%, e ajustes) | R$ 20,00/semana | R$ 20,00/semana |
 | **Total da semana** | **R$ 300,00** | **R$ 300,00** |
 
-- Semana 0 (30/09 a 04/10): R$ 0,00 — só preparação.
+- Semana 0 (até 05/10): R$ 0,00 — só preparação.
 - YouTube pago (opcional, a partir de 26/10): R$ 7,00/dia (R$ 49,00/semana), só se o custo por conversa estiver até R$ 45,00.
 - Portais: R$ 0,00 na conta da Montreal. Destaque pago só se vierem menos de 3 contatos em 2 semanas.
 - Corretor parceiro: 50% da comissão, só se fechar.
 
 ## A sequência
 
-&#91;embedded content: calendário da divulgação · 30/09 a 1º/11\]
+(Calendário: veja o bloco "Calendário ajustado em 03/10" no topo deste documento.)
 
-A semana 0 (30/09 a 04/10) prepara contas, Instagram, portais e YouTube; o Google liga na segunda, 05/10, o Meta na terça, 06/10, e o ChatGPT entra de 12 a 25/10. Na última semana, todos os contatos em aberto recebem a última chamada da oferta.
+A semana 0 (03 a 05/10) prepara contas, Instagram, portais e YouTube; o Google liga na terça, 06/10, o Meta na quarta, 07/10, e o ChatGPT entra de 12 a 25/10. Na última semana, todos os contatos em aberto recebem a última chamada da oferta.
 
-## Etapa 1 — Contas do Meta (quarta, 30/09 · uns 40 minutos)
+## Etapa 1 — Contas do Meta (sábado, 03/10 · uns 40 minutos)
 
 No fim desta etapa, Página, Instagram e WhatsApp estão ligados e o Gerenciador de Anúncios aceita pagamento.
 
@@ -64,7 +66,7 @@ No fim desta etapa, Página, Instagram e WhatsApp estão ligados e o Gerenciador
 - [ ] WhatsApp ligado à Página
 - [ ] Forma de pagamento salva
 
-## Etapa 2 — Pixel do Meta (quarta, 30/09 · 15 minutos)
+## Etapa 2 — Pixel do Meta (sábado, 03/10 · 15 minutos)
 
 O Pixel é um código que avisa o Meta quando alguém clica no WhatsApp do site. Você cria e me manda o número; eu coloco no site.
 
@@ -80,9 +82,9 @@ O Pixel é um código que avisa o Meta quando alguém clica no WhatsApp do site.
 - [ ] ID do Pixel enviado
 - [ ] Evento Contact aparecendo
 
-## Etapa 3 — Instagram pronto antes dos anúncios (quinta 01/10 a domingo 04/10)
+## Etapa 3 — Instagram pronto antes dos anúncios (domingo 04/10 a quarta 07/10)
 
-Quem vê o anúncio abre o perfil antes de chamar; perfil vazio assusta. A meta é ter 4 carrosséis e 2 Reels no feed antes de terça, 06/10.
+Quem vê o anúncio abre o perfil antes de chamar; perfil vazio assusta. A meta é ter o carrossel Principal e o Reel do tour no feed antes de o Google ligar (terça, 06/10) e os 4 carrosséis e 2 Reels até quarta, 07/10.
 
 **Onde fazer:** no computador, pelo Meta Business Suite (business.facebook.com) → **Criar publicação**, marcando Instagram e Facebook juntos. Assim você usa os arquivos que já estão na pasta `Sala601_Gemini` e pode agendar.
 
@@ -93,10 +95,10 @@ Quem vê o anúncio abre o perfil antes de chamar; perfil vazio assusta. A meta 
 
 | Dia | Feed | Stories |
 | --- | --- | --- |
-| Qui 01/10 | Carrossel Principal + Reel do tour | Principal (4) |
-| Sex 02/10 | Carrossel Advocacia | Advocacia (3) |
-| Sáb 03/10 | Carrossel Psicologia + Reel do prédio | Psicologia (3) |
-| Dom 04/10 | Carrossel Consultoria | Consultoria (3) |
+| Dom 04/10 | Carrossel Principal + Reel do tour | Principal (4) |
+| Seg 05/10 | Carrossel Advocacia | Advocacia (3) |
+| Ter 06/10 | Carrossel Psicologia + Reel do prédio | Psicologia (3) |
+| Qua 07/10 | Carrossel Consultoria | Consultoria (3) |
 
 **Antes de publicar, confira:** toda imagem decorada tem o selo "imagem ilustrativa"; o endereço aparece completo ("Boa Viagem, Recife – PE"); nenhum texto diz "frente mar".
 
@@ -105,9 +107,9 @@ Quem vê o anúncio abre o perfil antes de chamar; perfil vazio assusta. A meta 
 - [ ] 2 Reels publicados
 - [ ] Stories e Destaque "Sala 601"
 
-## Etapa 4 — Google Ads (sexta, 02/10 · uma hora e meia)
+## Etapa 4 — Google Ads (segunda, 05/10 · uma hora e meia)
 
-A campanha fica pronta na sexta e começa sozinha na segunda, 05/10. Só texto: aparece para quem pesquisa sala comercial em Recife.
+A campanha fica pronta na segunda e começa sozinha na terça, 06/10. Só texto: aparece para quem pesquisa sala comercial em Recife.
 
 **4a. Conta**
 
@@ -132,7 +134,7 @@ A campanha fica pronta na sexta e começa sozinha na segunda, 05/10. Só texto: 
 | Horário | Todos os dias, 7h às 22h |
 | Orçamento | R$ 20,00 por dia |
 | Lance | Maximizar cliques, com lance máximo de R$ 6,00 por clique |
-| Início | Segunda, 05/10/2026 |
+| Início | Terça, 06/10/2026 |
 | Link do anúncio | o de Google da seção Links prontos |
 
 **4d. Três grupos de anúncios, com as palavras entre aspas** (as aspas fazem o Google mostrar só para buscas parecidas):
@@ -182,13 +184,13 @@ Descrições (4, até 90 letras cada):
 | Frase de destaque | Aluguel Só em 2027 · Contratos Até 31/10 · Vista Mar · 1ª Locação · CRECI 4648-J | — |
 | Ligação | (81) 99996-2772 | — |
 
-**Deu certo quando:** a campanha aparece como "Qualificada" ou "Em análise" com início em 05/10. Antes de clicar em Publicar, me mande um print da tela de resumo.
+**Deu certo quando:** a campanha aparece como "Qualificada" ou "Em análise" com início em 06/10. Antes de clicar em Publicar, me mande um print da tela de resumo.
 
 - [ ] Conta criada no Modo Especialista
 - [ ] ID e rótulo da conversão enviados
-- [ ] Campanha salva com início em 05/10
+- [ ] Campanha salva com início em 06/10
 
-## Etapa 5 — YouTube (sábado, 03/10 · 40 minutos)
+## Etapa 5 — YouTube (domingo, 04/10 · 40 minutos)
 
 O YouTube é de graça e serve de endereço do vídeo: os portais pedem um link do YouTube, e o site mostra o tour.
 
@@ -208,7 +210,7 @@ O YouTube é de graça e serve de endereço do vídeo: os portais pedem um link 
 - [ ] 2 Shorts publicados
 - [ ] Link enviado
 
-## Etapa 6 — Portais (sábado, 03/10 · uma hora)
+## Etapa 6 — Portais (domingo, 04/10 · uma hora)
 
 Quem procura sala começa pelos portais. Publicar é de graça na conta da Montreal; o texto e as fotos já estão prontos no `Guia_Publicacao_Portais_Sala601.md`.
 
@@ -227,7 +229,7 @@ Quem procura sala começa pelos portais. Publicar é de graça na conta da Montr
 - [ ] Imovelweb no ar
 - [ ] Chaves na Mão no ar
 
-## Etapa 7 — Corretores parceiros e atendimento (domingo, 04/10 · 40 minutos)
+## Etapa 7 — Corretores parceiros e atendimento (7a no sábado 03/10 · 7b na terça 06/10 · 40 minutos)
 
 O anúncio só vale se a resposta vier rápido. Antes de ligar os anúncios, o WhatsApp precisa estar pronto para responder na hora.
 
@@ -246,9 +248,9 @@ O anúncio só vale se a resposta vier rápido. Antes de ligar os anúncios, o W
 - [ ] Quem responde à noite definido
 - [ ] Mensagem enviada aos 20 corretores
 
-## Etapa 8 — Campanha no Meta (domingo, 04/10 · uma hora e meia)
+## Etapa 8 — Campanha no Meta (segunda, 05/10 · uma hora e meia)
 
-Você monta tudo no domingo e programa para começar na terça, 06/10, às 8h. Quem clicar cai direto no WhatsApp da Montreal.
+Você monta tudo na segunda e programa para começar na quarta, 07/10, às 8h. Quem clicar cai direto no WhatsApp da Montreal.
 
 **8a. Campanha** — Gerenciador de Anúncios (adsmanager.facebook.com) → **+ Criar**.
 
@@ -264,7 +266,7 @@ Você monta tudo no domingo e programa para começar na terça, 06/10, às 8h. Q
 | --- | --- |
 | Local da conversão | Apps de mensagem → WhatsApp → (81) 99996-2772 |
 | Orçamento | R$ 20,00 por dia |
-| Início | Terça, 06/10/2026, 8h |
+| Início | Quarta, 07/10/2026, 8h |
 | Local | Recife, raio de 8 km a partir de Boa Viagem (pega Boa Viagem, Pina, Setúbal e Imbiribeira) |
 | Idade | 27 a 60 anos |
 | Público | Aberto (Advantage+), sem interesses por enquanto |
@@ -292,23 +294,23 @@ Em cada anúncio:
 
 **Regra de ouro:** não mexa em nada por 7 dias. O Meta precisa desse tempo para aprender.
 
-- [ ] Campanha e conjunto criados, início 06/10
+- [ ] Campanha e conjunto criados, início 07/10
 - [ ] 4 anúncios com textos e botão do WhatsApp
 - [ ] Prints conferidos comigo
-- [ ] Publicado (fica "Programado" até terça)
+- [ ] Publicado (fica "Programado" até quarta)
 
-## Etapa 9 — Dia do lançamento (segunda 05/10 e terça 06/10 · 20 minutos por dia)
+## Etapa 9 — Dia do lançamento (terça 06/10 e quarta 07/10 · 20 minutos por dia)
 
 Nos dois dias você só confere; as campanhas ligam sozinhas.
 
-1. **Domingo à noite, teste final:** abra o site no celular pelo link do Google, clique no WhatsApp e veja se a mensagem chega no (81) 99996-2772 com "(vi no Google)". Me avise o resultado.
-2. **Segunda, 05/10, às 10h:** no Google Ads, a campanha está "Qualificada" e já tem impressões? Se aparecer "Reprovado", me mande o print.
-3. **Terça, 06/10, às 10h:** no Gerenciador de Anúncios, os 4 anúncios estão "Ativos"? Se algum estiver "Rejeitado", me mande o print — corrigimos no mesmo dia.
-4. **Terça à noite:** conte as primeiras conversas no WhatsApp e anote na planilha.
+1. **Segunda à noite, teste final:** abra o site no celular pelo link do Google, clique no WhatsApp e veja se a mensagem chega no (81) 99996-2772 com "(vi no Google)". Me avise o resultado.
+2. **Terça, 06/10, às 10h:** no Google Ads, a campanha está "Qualificada" e já tem impressões? Se aparecer "Reprovado", me mande o print.
+3. **Quarta, 07/10, às 10h:** no Gerenciador de Anúncios, os 4 anúncios estão "Ativos"? Se algum estiver "Rejeitado", me mande o print — corrigimos no mesmo dia.
+4. **Quarta à noite:** conte as primeiras conversas no WhatsApp e anote na planilha.
 
 - [ ] Teste do WhatsApp pelo site
-- [ ] Google no ar (05/10)
-- [ ] Meta no ar (06/10)
+- [ ] Google no ar (06/10)
+- [ ] Meta no ar (07/10)
 
 ## Etapa 10 — ChatGPT Ads, teste de 14 dias (conta na semana 1; anúncio de 12 a 25/10)
 
@@ -352,7 +354,7 @@ Toda segunda você me manda 4 números por canal e eu digo o que pausar, o que m
 
 **Regras de corte:**
 
-- **Meta, depois de 7 dias (13/10):** pause o anúncio com o maior custo por conversa. Se uma profissão se destacar, criamos um segundo conjunto só para ela. No lugar do anúncio pausado entra o vídeo real `Sala601_30s_9x16_1080.mp4` ou o `Anuncio_v5_oferta` (reservas).
+- **Meta, depois de 7 dias (14/10):** pause o anúncio com o maior custo por conversa. Se uma profissão se destacar, criamos um segundo conjunto só para ela. No lugar do anúncio pausado entra o vídeo real `Sala601_30s_9x16_1080.mp4` ou o `Anuncio_v5_oferta` (reservas).
 - **Google, toda semana:** em Palavras-chave → Termos de pesquisa, negativar o que não é aluguel de sala comercial.
 - **Qualquer canal:** nunca mexer em orçamento e anúncio no mesmo dia; uma mudança por vez.
 
