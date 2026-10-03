@@ -22,7 +22,7 @@ Atualizado em 03/10/2026 (aluguel reduzido para R$ 5.000,00 em 02/10). Este arqu
 - **Oferta de lançamento:** quem fechar até 31/10/2026 só começa a pagar o aluguel em janeiro de 2027. Até lá, paga apenas o condomínio.
 - **Depois de 31/10:** a oferta sai do site sozinha. Nos anúncios e respostas de WhatsApp, troque a frase da carência por "carência negociável para a obra".
 - **Imobiliária:** Imobiliária Montreal, 40+ anos, CRECI 4648-J
-- **WhatsApp da campanha:** (81) 99996-2772
+- **WhatsApp da campanha:** (81) 98326-8980
 - **Lançamento previsto:** 05/10/2026
 - **Verba:** R$ 300,00/semana, conforme o plano do projeto
 
@@ -134,7 +134,7 @@ Pasta no computador: **`C:\Users\Bruno Arcuri\Claude\Sala601_Gemini`**
 
 1. **Preparar as contas.**
    - Página do Facebook e Instagram profissional conectados no Meta Business.
-   - WhatsApp Business (81) 99996-2772 vinculado à Página, o que é necessário para o objetivo Mensagens.
+   - WhatsApp Business (81) 98326-8980 vinculado à Página, o que é necessário para o objetivo Mensagens.
    - Forma de pagamento no Gerenciador de Anúncios.
 2. **Criar o Pixel do Meta** no Gerenciador de Eventos e anotar o ID (um número de 15 a 16 dígitos).
    - O ID precisa entrar na landing, no campo `META_PIXEL_ID`.

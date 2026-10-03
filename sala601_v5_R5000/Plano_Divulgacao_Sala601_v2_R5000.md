@@ -51,10 +51,10 @@ A semana 0 (03 a 05/10) prepara contas, Instagram, portais e YouTube; o Google l
 
 No fim desta etapa, Página, Instagram e WhatsApp estão ligados e o Gerenciador de Anúncios aceita pagamento.
 
-1. **Página do Facebook.** Se a "Imobiliária Montreal" já existe, confira se você é administrador. Se não existe, crie em facebook.com/pages/create (categoria Imobiliária) com logo, capa e o WhatsApp (81) 99996-2772.
+1. **Página do Facebook.** Se a "Imobiliária Montreal" já existe, confira se você é administrador. Se não existe, crie em facebook.com/pages/create (categoria Imobiliária) com logo, capa e o WhatsApp (81) 98326-8980.
 2. **Instagram profissional.** No aplicativo: Configurações → Tipo de conta e ferramentas → Mudar para conta profissional → Empresa → categoria Imobiliária.
 3. **Ligar o Instagram à Página.** Na Página: Configurações → Contas vinculadas → Instagram → Conectar.
-4. **Ligar o WhatsApp à Página.** No mesmo lugar: Contas vinculadas → WhatsApp → número (81) 99996-2772 → o código chega no próprio WhatsApp. O ideal é o número estar no aplicativo WhatsApp Business.
+4. **Ligar o WhatsApp à Página.** No mesmo lugar: Contas vinculadas → WhatsApp → número (81) 98326-8980 → o código chega no próprio WhatsApp. O ideal é o número estar no aplicativo WhatsApp Business.
 5. **Conferir no Meta Business Suite** (business.facebook.com): Página e Instagram aparecem juntos.
 6. **Pagamento.** No Gerenciador de Anúncios: Faturamento e pagamentos → Adicionar forma de pagamento (cartão, ou Pix/boleto pré-pago). Cadastre com o CNPJ da Montreal, 11.145.398/0001-70, para as notas saírem no nome da empresa. Não coloque dinheiro ainda.
 
@@ -182,7 +182,7 @@ Descrições (4, até 90 letras cada):
 | Sitelink | Para psicologia | link do Google + `&nicho=psicologia` |
 | Sitelink | Para consultoria | link do Google + `&nicho=consultoria` |
 | Frase de destaque | Aluguel Só em 2027 · Contratos Até 31/10 · Vista Mar · 1ª Locação · CRECI 4648-J | — |
-| Ligação | (81) 99996-2772 | — |
+| Ligação | (81) 98326-8980 | — |
 
 **Deu certo quando:** a campanha aparece como "Qualificada" ou "Em análise" com início em 06/10. Antes de clicar em Publicar, me mande um print da tela de resumo.
 
@@ -220,7 +220,7 @@ Quem procura sala começa pelos portais. Publicar é de graça na conta da Montr
 4. **Dados:** 46,5 m² · 6º andar · 1 vaga · 1 banheiro · aluguel R$ 5.000,00 · condomínio R$ 1.066,94 · IPTU "em lançamento" · Rua Antônio Falcão, 150, Boa Viagem, Recife – PE · CEP 51020-240.
 5. **Fotos, nesta ordem:** as 29 da pasta `Fotos_Portais_v3`, na numeração (01 a 25 reais, capa = 01, a vista nova da janela; 26 a 28 ilustrativas, marcadas como ilustração no portal; 29 planta); depois, se o portal aceitar mais, as ilustrativas por profissão (pasta `Nichos`), sempre com o selo "imagem ilustrativa".
 6. **Vídeo:** o link do YouTube da Etapa 5, no campo de vídeo.
-7. **Contato:** WhatsApp (81) 99996-2772.
+7. **Contato:** WhatsApp (81) 98326-8980.
 8. Repita em **Imovelweb** e **Chaves na Mão** com o mesmo texto e fotos.
 
 **Destaque pago:** só se, em 2 semanas, vierem menos de 3 contatos pelos portais. Aí a gente compara preços antes de contratar.
@@ -242,7 +242,7 @@ O anúncio só vale se a resposta vier rápido. Antes de ligar os anúncios, o W
 
 **7b. Corretores parceiros** — mande para 20 corretores, pelo WhatsApp: o vídeo `Sala601_30s_9x16_1080.mp4`, o PDF `Sala601_Carrossel_v5.pdf` (pasta `Sala601_v5_R5000`) e este texto:
 
-> Bruno, da Montreal. Sala 601 do Empresarial João Carvalho, Boa Viagem, Recife – PE: 46,5 m² em casco, 6º andar com vista para o mar, 1 vaga. Fechando até 31/10, o inquilino só começa a pagar o aluguel (R$ 5.000,00) em janeiro de 2027 — até dezembro, só o condomínio. Vídeo real em anexo. Parceria de 50% da comissão. Visitas com hora marcada: (81) 99996-2772.
+> Bruno, da Montreal. Sala 601 do Empresarial João Carvalho, Boa Viagem, Recife – PE: 46,5 m² em casco, 6º andar com vista para o mar, 1 vaga. Fechando até 31/10, o inquilino só começa a pagar o aluguel (R$ 5.000,00) em janeiro de 2027 — até dezembro, só o condomínio. Vídeo real em anexo. Parceria de 50% da comissão. Visitas com hora marcada: (81) 98326-8980.
 
 - [ ] Respostas por profissão à mão
 - [ ] Quem responde à noite definido
@@ -264,7 +264,7 @@ Você monta tudo na segunda e programa para começar na quarta, 07/10, às 8h. Q
 
 | Configuração | O que marcar |
 | --- | --- |
-| Local da conversão | Apps de mensagem → WhatsApp → (81) 99996-2772 |
+| Local da conversão | Apps de mensagem → WhatsApp → (81) 98326-8980 |
 | Orçamento | R$ 20,00 por dia |
 | Início | Quarta, 07/10/2026, 8h |
 | Local | Recife, raio de 8 km a partir de Boa Viagem (pega Boa Viagem, Pina, Setúbal e Imbiribeira) |
@@ -303,7 +303,7 @@ Em cada anúncio:
 
 Nos dois dias você só confere; as campanhas ligam sozinhas.
 
-1. **Segunda à noite, teste final:** abra o site no celular pelo link do Google, clique no WhatsApp e veja se a mensagem chega no (81) 99996-2772 com "(vi no Google)". Me avise o resultado.
+1. **Segunda à noite, teste final:** abra o site no celular pelo link do Google, clique no WhatsApp e veja se a mensagem chega no (81) 98326-8980 com "(vi no Google)". Me avise o resultado.
 2. **Terça, 06/10, às 10h:** no Google Ads, a campanha está "Qualificada" e já tem impressões? Se aparecer "Reprovado", me mande o print.
 3. **Quarta, 07/10, às 10h:** no Gerenciador de Anúncios, os 4 anúncios estão "Ativos"? Se algum estiver "Rejeitado", me mande o print — corrigimos no mesmo dia.
 4. **Quarta à noite:** conte as primeiras conversas no WhatsApp e anote na planilha.

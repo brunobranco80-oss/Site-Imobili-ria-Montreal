@@ -1,6 +1,6 @@
 # Vídeos da Sala 601 · pacote v5 (03/10/2026) — guia de uso, legendas e publicação
 
-Todos os vídeos abaixo já estão com **R$ 5.000,00/mês**, a **vista nova** da janela (praia e mar, gravada em 02/10), a **entrada real do prédio** na abertura do tour, a oferta **"aluguel só a partir de janeiro de 2027 (contratos até 31/10/2026)"**, o endereço completo (Boa Viagem, Recife – PE) e o cartão final com o WhatsApp (81) 99996-2772. Eles substituem os arquivos `V1_…`, `V2_…`, `V3_…`, `V4_…`, `V7_…`, `V8_…`, `S1_…`, `V9_…` e `Sala601_Montagem_…` que estão no Dropbox: aqueles mostram R$ 6.000 e a frase antiga "carência para o acabamento negociável". **Não usar os antigos.**
+Todos os vídeos abaixo já estão com **R$ 5.000,00/mês**, a **vista nova** da janela (praia e mar, gravada em 02/10), a **entrada real do prédio** na abertura do tour, a oferta **"aluguel só a partir de janeiro de 2027 (contratos até 31/10/2026)"**, o endereço completo (Boa Viagem, Recife – PE) e o cartão final com o WhatsApp (81) 98326-8980. Eles substituem os arquivos `V1_…`, `V2_…`, `V3_…`, `V4_…`, `V7_…`, `V8_…`, `S1_…`, `V9_…` e `Sala601_Montagem_…` que estão no Dropbox: aqueles mostram R$ 6.000 e a frase antiga "carência para o acabamento negociável". **Não usar os antigos.**
 
 Música: os vídeos do site e do Instagram têm trilha do Pixabay, liberada para uso comercial, já com o volume normalizado. Os que terminam em `_semaudio` não têm som (para Reels, use a biblioteca de áudio do próprio Instagram).
 
@@ -30,22 +30,22 @@ Os três primeiros da lista de Reels (tour, sala 30 s e prédio) também estão 
 > Sala 601 · Empresarial João Carvalho · Boa Viagem, Recife – PE 🌊
 > 46,5 m² em casco para você projetar o escritório do zero, 6º andar com vista para o mar, banheiro privativo e 1 vaga. 1ª locação, direto com a proprietária.
 > Feche até 31/10 e só pague aluguel em janeiro de 2027. Até lá, apenas o condomínio. R$ 5.000,00/mês.
-> 💬 Agende sua visita: (81) 99996-2772 — link na bio.
+> 💬 Agende sua visita: (81) 98326-8980 — link na bio.
 > #salacomercial #boaviagem #recife #escritorio #aluguelcomercial #imobiliariamontreal #empresarialjoaocarvalho
 
 **Reels — V3 (a vista)**
 > Essa é a vista real da Sala 601, sem filtro: 6º andar, o mar de Boa Viagem ao fundo. 🌅
 > 46,5 m² para montar do seu jeito. Feche até 31/10 e só pague aluguel em janeiro de 2027. R$ 5.000,00/mês.
-> 💬 Vem ver ao vivo: (81) 99996-2772.
+> 💬 Vem ver ao vivo: (81) 98326-8980.
 
 **Reels — Prédio 20 s**
 > Lobby com pé-direito duplo, acesso por reconhecimento facial, business center, auditório panorâmico e terraço na cobertura. E a sua sala no 6º andar. 🏢
 > Sala 601 · 46,5 m² · 1ª locação · R$ 5.000,00/mês · aluguel só em 2027 para contratos até 31/10 · Boa Viagem, Recife – PE.
-> 💬 (81) 99996-2772
+> 💬 (81) 98326-8980
 
 **Reels — Montagem ("do casco ao escritório pronto")**
 > Do casco ao escritório pronto. Sala 601 · Empresarial João Carvalho · Boa Viagem, Recife – PE · 46,5 m² com vista para o mar · R$ 5.000,00/mês, aluguel só a partir de janeiro de 2027 (contratos até 31/10). Imagem ilustrativa; a sala é entregue em casco.
-> 💬 (81) 99996-2772 · Imobiliária Montreal · CRECI 4648-J
+> 💬 (81) 98326-8980 · Imobiliária Montreal · CRECI 4648-J
 
 **Stories (S1) — texto sobre o vídeo**
 > "Sala 601 · vista mar · R$ 5.000,00/mês · aluguel só em 2027" + figurinha de link para a landing + figurinha "Enviar mensagem".
@@ -57,9 +57,9 @@ Os três primeiros da lista de Reels (tour, sala 30 s e prédio) também estão 
 - Descrição:
   > Tour real pela Sala 601 do Empresarial João Carvalho, edifício corporativo recém-entregue em Boa Viagem, Recife – PE. 46,5 m² em casco, 6º andar com vista para o mar, banheiro privativo e 1 vaga de garagem. Aluguel R$ 5.000,00/mês + condomínio R$ 1.066,94. Oferta de lançamento: contratos assinados até 31/10/2026 só começam a pagar o aluguel em janeiro de 2027 (até lá, só o condomínio). 1ª locação, direto com a proprietária.
   > 📍 Rua Antônio Falcão, 150 — Boa Viagem, Recife – PE.
-  > 💬 Agende sua visita pelo WhatsApp: https://wa.me/5581999962772?text=Ol%C3%A1!%20Vi%20o%20v%C3%ADdeo%20da%20Sala%20601%20no%20YouTube%20e%20quero%20agendar%20uma%20visita.
+  > 💬 Agende sua visita pelo WhatsApp: https://wa.me/5581983268980?text=Ol%C3%A1!%20Vi%20o%20v%C3%ADdeo%20da%20Sala%20601%20no%20YouTube%20e%20quero%20agendar%20uma%20visita.
   > 🔗 Página da sala: https://sala601-imobiliaria-montreal.base44.app/sala601/index.html?utm_source=youtube&utm_medium=organic&utm_campaign=sala601
-  > Imobiliária Montreal · 40+ anos · CRECI 4648-J · (81) 99996-2772
+  > Imobiliária Montreal · 40+ anos · CRECI 4648-J · (81) 98326-8980
   > As imagens marcadas como ilustrativas são renders do empreendimento; as demais são fotos e vídeos reais.
 - Tags: sala comercial boa viagem, sala comercial recife, aluguel sala comercial boa viagem, empresarial joão carvalho, escritório boa viagem, imobiliária montreal, sala comercial vista mar recife
 - Capa: `Criativos_v5\Capa_YouTube_v5_16x9.jpg`
