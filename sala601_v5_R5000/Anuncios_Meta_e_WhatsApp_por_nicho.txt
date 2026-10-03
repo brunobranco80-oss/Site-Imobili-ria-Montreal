@@ -1,0 +1,130 @@
+SALA 601 - ANÚNCIOS DO META POR PROFISSÃO + RESPOSTAS DE WHATSAPP
+Imobiliária Montreal · lançamento previsto para 05/10/2026 · usar dentro da verba já aprovada no plano
+
+======================================================================
+1) COMO MONTAR NO GERENCIADOR DE ANÚNCIOS (verba pequena = estrutura simples)
+======================================================================
+Campanha: "Sala 601 - Lançamento"
+  Objetivo: Engajamento > Mensagens (WhatsApp)
+    (alternativa: Tráfego para o site, usando os links com ?nicho= abaixo)
+
+Conjunto de anúncios: 1 só conjunto no início
+  Local: Recife, raio de 8 km a partir de Boa Viagem (pega Boa Viagem, Pina, Setúbal, Imbiribeira)
+  Idade: 27 a 60 anos
+  Público: aberto (Advantage+). Com verba pequena, o Meta aprende mais rápido
+  com um conjunto só e quatro anúncios dentro dele.
+  Posicionamentos: Feed e Stories do Instagram e do Facebook
+
+Anúncios dentro do conjunto (4):
+  A. Principal ....... carrossel "Principal" (5 slides) + Stories "Principal"
+  B. Advocacia ....... carrossel "Advocacia" (3 slides) + Stories "Advocacia"
+  C. Psicologia ...... carrossel "Psicologia" (3 slides) + Stories "Psicologia"
+  D. Consultoria ..... carrossel "Consultoria" (3 slides) + Stories "Consultoria"
+
+Regra da semana 2: depois de 7 dias, pause o anúncio com o maior custo por
+conversa. Se um nicho se destacar (ex.: advocacia), crie um 2º conjunto só
+com ele, usando interesses (lista no fim de cada nicho).
+
+Atenção: se o Meta pedir "Categoria especial de anúncio - Imóveis/Habitação",
+marque. Nesse caso ele limita idade e interesses; use apenas a localização.
+
+Links do site com a aba da profissão abrindo sozinha:
+  Principal:   https://sala601-imobiliaria-montreal.base44.app/sala601/index.html?utm_source=meta&utm_campaign=sala601_lancamento&utm_content=principal
+  Advocacia:   https://sala601-imobiliaria-montreal.base44.app/sala601/index.html?utm_source=meta&utm_campaign=sala601_lancamento&utm_content=advocacia
+  Psicologia:  https://sala601-imobiliaria-montreal.base44.app/sala601/index.html?utm_source=meta&utm_campaign=sala601_lancamento&utm_content=psicologia
+  Consultoria: https://sala601-imobiliaria-montreal.base44.app/sala601/index.html?utm_source=meta&utm_campaign=sala601_lancamento&utm_content=consultoria
+
+Mensagem pronta do botão "Enviar mensagem pelo WhatsApp" (uma por anúncio,
+para você saber de qual anúncio veio cada contato):
+  A. Principal:   Olá! Vi o anúncio da Sala 601 no Instagram/Facebook e gostaria de mais informações.
+  B. Advocacia:   Olá! Vi o anúncio da Sala 601 para advocacia e gostaria de mais informações.
+  C. Psicologia:  Olá! Vi o anúncio da Sala 601 para psicologia e gostaria de mais informações.
+  D. Consultoria: Olá! Vi o anúncio da Sala 601 para consultoria e gostaria de mais informações.
+
+======================================================================
+2) TEXTOS DOS ANÚNCIOS (versão A e versão B para teste)
+======================================================================
+
+---------- A. PRINCIPAL ----------
+Texto principal (A):
+Sala comercial com vista para o mar em Boa Viagem, Recife – PE. A Sala 601 do Empresarial João Carvalho tem 46,5 m² prontos para o seu projeto. Feche até 31/10 e só pague aluguel em janeiro de 2027. Até lá, apenas o condomínio.
+Texto principal (B):
+Seu escritório com vista para o mar, em um empresarial novo de Boa Viagem, Recife – PE. Contrato assinado até 31/10 = aluguel só a partir de janeiro de 2027. Chame no WhatsApp e agende a visita.
+Título: Sala 601 vista mar · Boa Viagem, Recife-PE
+Descrição: R$ 5.000,00/mês · aluguel só em janeiro/2027
+Botão: Enviar mensagem pelo WhatsApp
+Rodapé do texto: *Imagens ilustrativas de decoração. A sala é entregue em casco.
+
+---------- B. ADVOCACIA ----------
+Texto principal (A):
+Advogado(a), seu escritório com vista para o mar em Boa Viagem, Recife – PE. 46,5 m² no Empresarial João Carvalho para a sala dos sócios, a sala de reunião e a recepção dos seus clientes. Feche até 31/10 e só pague aluguel em janeiro de 2027.
+Texto principal (B):
+Endereço de prestígio para receber seus clientes: Sala 601, Empresarial João Carvalho, Boa Viagem, Recife – PE. Vista para o mar e aluguel só a partir de janeiro de 2027 para contratos até 31/10.
+Título: Escritório de advocacia com vista mar
+Descrição: Boa Viagem, Recife-PE · aluguel só em jan/2027
+Botão: Enviar mensagem pelo WhatsApp
+Rodapé: *Imagem ilustrativa de decoração. A sala é entregue em casco.
+Interesses (para o 2º conjunto, se advocacia se destacar): Advocacia, Direito, Ordem dos Advogados do Brasil, Direito empresarial, Direito civil, Jusbrasil.
+
+---------- C. PSICOLOGIA E TERAPIA ----------
+Texto principal (A):
+Psicólogo(a), que tal atender com vista para o mar? A Sala 601, em Boa Viagem, Recife – PE, comporta sala de espera e sala de atendimento reservada, com luz natural. Feche até 31/10 e só pague aluguel em janeiro de 2027.
+Texto principal (B):
+Um consultório calmo e reservado, com luz natural e vista para o mar, no Empresarial João Carvalho, em Boa Viagem, Recife – PE. Contrato até 31/10: aluguel só a partir de janeiro de 2027.
+Título: Seu consultório com vista mar
+Descrição: Boa Viagem, Recife-PE · aluguel só em jan/2027
+Botão: Enviar mensagem pelo WhatsApp
+Rodapé: *Imagem ilustrativa de decoração. A sala é entregue em casco.
+Interesses: Psicologia, Psicoterapia, Terapia cognitivo-comportamental, Psicanálise, Conselho Federal de Psicologia, Saúde mental.
+
+---------- D. CONSULTORIA / FINANÇAS / CONTABILIDADE ----------
+Texto principal (A):
+Sua consultoria com vista para o mar em Boa Viagem, Recife – PE. 46,5 m² para a equipe trabalhar e para receber clientes em reuniões, no Empresarial João Carvalho. Feche até 31/10 e só pague aluguel em janeiro de 2027.
+Texto principal (B):
+Contabilidade, finanças ou consultoria: leve sua equipe para um empresarial novo em Boa Viagem, Recife – PE, com vista para o mar. Aluguel só a partir de janeiro de 2027 para contratos até 31/10.
+Título: Escritório para a sua equipe, vista mar
+Descrição: Boa Viagem, Recife-PE · aluguel só em jan/2027
+Botão: Enviar mensagem pelo WhatsApp
+Rodapé: *Imagem ilustrativa de decoração. A sala é entregue em casco.
+Interesses: Consultoria empresarial, Contabilidade, Gestão financeira, Empreendedorismo, Pequenas e médias empresas, Tecnologia da informação.
+
+======================================================================
+3) WHATSAPP - PRIMEIRA RESPOSTA POR PROFISSÃO
+(para você ou para a IA de atendimento usar assim que a pessoa chamar)
+======================================================================
+
+---------- GERAL ----------
+Olá! Aqui é da Imobiliária Montreal, obrigado pelo contato. 😊
+A Sala 601 do Empresarial João Carvalho (Rua Antônio Falcão, 150, Boa Viagem, Recife – PE) tem 46,5 m², fica no 6º andar, com vista para o mar, banheiro dentro da sala, e é entregue em casco para você montar do seu jeito.
+Aluguel: R$ 5.000,00/mês + condomínio (R$ 1.066,94).
+Oferta de lançamento: fechando o contrato até 31/10, você só começa a pagar o aluguel em janeiro de 2027. Até lá, paga apenas o condomínio.
+Para eu te ajudar melhor: a sala seria para qual atividade e para quantas pessoas?
+Posso agendar uma visita para você ver a vista ao vivo. Qual o melhor dia e horário?
+
+---------- ADVOCACIA ----------
+Olá, Dr.(a)! Aqui é da Imobiliária Montreal, obrigado pelo contato.
+A Sala 601 do Empresarial João Carvalho, em Boa Viagem, Recife – PE, tem 46,5 m² e funciona muito bem como escritório de advocacia: dá para ter recepção, sala de reunião para receber clientes e a sala do sócio junto à janela com vista para o mar. Ela é entregue em casco, então o projeto fica do seu jeito.
+Aluguel de R$ 5.000,00/mês + condomínio, e fechando até 31/10 você só começa a pagar o aluguel em janeiro de 2027 (até lá, só o condomínio): tempo para a obra.
+O escritório seria para quantos advogados? Posso agendar uma visita esta semana?
+
+---------- PSICOLOGIA E TERAPIA ----------
+Olá! Aqui é da Imobiliária Montreal, obrigado pelo contato.
+A Sala 601 do Empresarial João Carvalho, em Boa Viagem, Recife – PE, tem 46,5 m², luz natural e vista para o mar. O espaço permite uma sala de espera na entrada e uma sala de atendimento reservada (com divisória), e ela é entregue em casco para você montar o consultório do seu jeito.
+Aluguel de R$ 5.000,00/mês + condomínio, e fechando até 31/10 você só começa a pagar o aluguel em janeiro de 2027 (até lá, só o condomínio).
+Você atenderia sozinho(a) ou dividiria a sala com outros profissionais? Posso agendar uma visita?
+
+---------- CONSULTORIA / FINANÇAS ----------
+Olá! Aqui é da Imobiliária Montreal, obrigado pelo contato.
+A Sala 601 do Empresarial João Carvalho, em Boa Viagem, Recife – PE, tem 46,5 m² com vista para o mar: cabe a equipe em estações de trabalho e uma mesa de reunião junto à janela. É entregue em casco, então você define o layout.
+Aluguel de R$ 5.000,00/mês + condomínio, e fechando até 31/10 você só começa a pagar o aluguel em janeiro de 2027 (até lá, só o condomínio).
+Quantas pessoas trabalhariam na sala? Posso agendar uma visita para você conhecer?
+
+---------- LEMBRETE (24 h depois, se a pessoa não responder) ----------
+Oi! Passando só para lembrar da Sala 601 com vista para o mar em Boa Viagem, Recife – PE. A condição de só pagar aluguel em janeiro de 2027 vale para contratos assinados até 31/10. Quer que eu reserve um horário de visita para você?
+
+======================================================================
+REGRAS PARA TODOS OS TEXTOS
+- Não informar o valor mínimo de negociação: o preço público é R$ 5.000,00/mês.
+- Sempre dizer que as imagens decoradas são ilustrativas e que a sala é entregue em casco.
+- "vista para o mar" (nunca "frente mar").
+- Depois de 31/10 a oferta acaba: trocar a frase da carência por "carência negociável para a obra".
