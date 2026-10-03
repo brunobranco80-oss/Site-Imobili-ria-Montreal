@@ -1,6 +1,6 @@
 # Vídeos da Sala 601 · pacote v5 (03/10/2026) — guia de uso, legendas e publicação
 
-Todos os vídeos abaixo já estão com **R$ 5.000,00/mês**, a oferta **"aluguel só a partir de janeiro de 2027 (contratos até 31/10/2026)"**, o endereço completo (Boa Viagem, Recife – PE) e o cartão final com o WhatsApp (81) 99996-2772. Eles substituem os arquivos `V1_…`, `V2_…`, `V3_…`, `V4_…`, `V7_…`, `V8_…`, `S1_…`, `V9_…` e `Sala601_Montagem_…` que estão no Dropbox: aqueles mostram R$ 6.000 e a frase antiga "carência para o acabamento negociável". **Não usar os antigos.**
+Todos os vídeos abaixo já estão com **R$ 5.000,00/mês**, a **vista nova** da janela (praia e mar, gravada em 02/10), a **entrada real do prédio** na abertura do tour, a oferta **"aluguel só a partir de janeiro de 2027 (contratos até 31/10/2026)"**, o endereço completo (Boa Viagem, Recife – PE) e o cartão final com o WhatsApp (81) 99996-2772. Eles substituem os arquivos `V1_…`, `V2_…`, `V3_…`, `V4_…`, `V7_…`, `V8_…`, `S1_…`, `V9_…` e `Sala601_Montagem_…` que estão no Dropbox: aqueles mostram R$ 6.000 e a frase antiga "carência para o acabamento negociável". **Não usar os antigos.**
 
 Música: os vídeos do site e do Instagram têm trilha do Pixabay, liberada para uso comercial, já com o volume normalizado. Os que terminam em `_semaudio` não têm som (para Reels, use a biblioteca de áudio do próprio Instagram).
 
@@ -15,7 +15,7 @@ Música: os vídeos do site e do Instagram têm trilha do Pixabay, liberada para
 | `Sala601_30s_16x9_1080.mp4` | 24 s | 1920×1080 | YouTube in-feed, LinkedIn, portais com vídeo | V2 16:9 |
 | `Predio_20s_Reels_9x16.mp4` (= `predio_20s_9x16_1080_reels`) | 20 s | 1080×1920 | Reels e anúncio para o público profissional (advocacia, saúde, consultoria), Short | V4 9:16 |
 | `predio_20s_16x9_1080.mp4` | 20 s | 1920×1080 | YouTube, LinkedIn | V4 16:9 |
-| `V3_Vista_15s_9x16.mp4` / `_16x9.mp4` | 16 s | 9:16 e 16:9 | Anúncio "gancho emocional" (terraço → vista real → auditório), Stories, Short | V3 (cartão trocado) |
+| `V3_Vista_15s_9x16.mp4` / `_16x9.mp4` | 16 s | 9:16 e 16:9 | Anúncio "gancho emocional" (terraço → vista nova → auditório), Stories, Short | V3 (refeito com a vista nova e música) |
 | `V7_Bumper_6s_9x16.mp4` | 6 s | 1080×1920 | Abertura de Reels, Stories, bumper do YouTube | V7 (cartão trocado) |
 | `V8_Porta601_loop_9x16.mp4` | 7 s | 1080×1920 | Anúncio "imagem em movimento", capa de destaque, Stories | V8 (refeito) |
 | `S1_Story_15s_9x16.mp4` | 14 s | 1080×1920 | Stories diários com figurinha de link | S1 (cartão trocado) |

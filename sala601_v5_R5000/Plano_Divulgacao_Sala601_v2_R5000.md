@@ -3,6 +3,8 @@
 Sep 29, 2026 · @Bruno Arcuri Branco · **revisado em 03/10/2026**
 
 > **O que mudou em 03/10:** o aluguel passou de R$ 6.000,00 para **R$ 5.000,00/mês** (condomínio continua R$ 1.066,94; a oferta "aluguel só em janeiro de 2027 para contratos até 31/10" continua). Landing já atualizada e no ar. Todas as peças foram refeitas com o preço novo e o endereço novo do site: carrosséis e Stories por profissão (pasta `Sala601_Gemini`), vídeos do site, e o **pacote v5** (`Sala601_v5_R5000`: anúncios, carrossel de 9 slides em PNG e PDF, capa do YouTube e vídeos V1–V9 com o cartão final novo). As peças "v4" e os vídeos antigos do Dropbox mostram R$ 6.000 e o endereço velho: **não usar**.
+>
+> **Fotos e vídeos de 02/10 (aplicados em 03/10):** a vista nova (praia, mar e coqueiros) entrou na landing, nos carrosséis, nos Stories, na capa dos portais e nos vídeos; a abertura do tour agora é a entrada real do prédio (no lugar do render); catracas, corredor do 6º andar, banheiro e a sala vista do fundo entraram nos portais e na landing. As fotos dos portais passaram a ser 29 (`Fotos_Portais_v3`).
 
 Vamos anunciar em 6 frentes — Instagram e Facebook, Google, YouTube, ChatGPT, portais e corretores — com R$ 300,00 por semana a partir de segunda, Oct 5, 2026. Até lá, a semana 0 deixa as contas e os perfis prontos. Cada etapa: você faz, me confirma, e só então passamos para a próxima.
 
@@ -214,7 +216,7 @@ Quem procura sala começa pelos portais. Publicar é de graça na conta da Montr
 2. **Título:** Sala comercial vista mar Boa Viagem — aluguel só em 2027
 3. **Descrição:** copie a do guia (começa pela oferta e termina com CRECI 4648-J).
 4. **Dados:** 46,5 m² · 6º andar · 1 vaga · 1 banheiro · aluguel R$ 5.000,00 · condomínio R$ 1.066,94 · IPTU "em lançamento" · Rua Antônio Falcão, 150, Boa Viagem, Recife – PE · CEP 51020-240.
-5. **Fotos, nesta ordem:** primeiro as reais (`fotos_portais_v2`, 01 a 21, capa = 01, a vista da janela); depois as ilustrativas por profissão (pasta `Nichos`), sempre com o selo "imagem ilustrativa"; por último a planta.
+5. **Fotos, nesta ordem:** as 29 da pasta `Fotos_Portais_v3`, na numeração (01 a 25 reais, capa = 01, a vista nova da janela; 26 a 28 ilustrativas, marcadas como ilustração no portal; 29 planta); depois, se o portal aceitar mais, as ilustrativas por profissão (pasta `Nichos`), sempre com o selo "imagem ilustrativa".
 6. **Vídeo:** o link do YouTube da Etapa 5, no campo de vídeo.
 7. **Contato:** WhatsApp (81) 99996-2772.
 8. Repita em **Imovelweb** e **Chaves na Mão** com o mesmo texto e fotos.
@@ -386,7 +388,7 @@ As peças por profissão estão no seu computador, na pasta `C:\Users\Bruno Arcu
 | Tour deitado (16:9) | `Sala601_Gemini\Videos` | Vídeo principal do YouTube e portais |
 | Fotos ilustrativas por profissão | `Sala601_Gemini\Nichos` | Portais (depois das reais) e WhatsApp |
 | Textos dos anúncios e respostas por profissão | `Sala601_Gemini\Anuncios_Meta_e_WhatsApp_por_nicho.txt` | Meta e atendimento |
-| 25 fotos para portais (reais primeiro) | Dropbox: `Fotos_Portais_v2.zip` | Portais |
+| 29 fotos para portais (reais primeiro, capa = vista nova) | `Sala601_v5_R5000\Fotos_Portais_v3` | Portais |
 | Anúncio da oferta 1:1 e 9:16 | `Sala601_v5_R5000\Criativos_v5\Anuncio_v5_oferta_*.png` | ChatGPT Ads e reserva do Meta |
 | Vídeo da sala, 30 s, com o cartão novo (9:16, 4:5 e 16:9 em 1080p) | `Sala601_v5_R5000\Videos_v5\Sala601_30s_*_1080.mp4` | Corretores, reserva do Meta, LinkedIn |
 | Carrossel em PDF (9 slides) | `Sala601_v5_R5000\Criativos_v5\Sala601_Carrossel_v5.pdf` | Corretores, e-mail e LinkedIn |

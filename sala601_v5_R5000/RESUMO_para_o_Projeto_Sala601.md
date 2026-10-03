@@ -55,7 +55,8 @@ Atualizado em 03/10/2026 (aluguel reduzido para R$ 5.000,00 em 02/10). Este arqu
 4. **"Veja a 601 como o seu escritório":** 4 abas (Escritório, Advocacia, Psicologia, Consultoria). Cada aba tem 3 fotos ilustrativas (porta, janela e fundo), com móveis em proporção menor para a sala parecer maior.
 5. **Vídeos em pé (9:16):** o tour completo da sala e o vídeo do prédio. Cada vídeo tem uma música diferente, todas do Pixabay e liberadas para uso comercial.
 6. **Localização, perguntas frequentes e WhatsApp.**
-7. **Final da página:** imagem do terraço da cobertura, a perspectiva da construtora, com o selo "Imagem ilustrativa". Mais tarde, dá para trocar por uma foto real do terraço.
+7. **Fotos de 02/10/2026:** a vista nova da janela (praia e mar) está na seção "A vista, de verdade", na faixa de fotos e nos carrosséis e Stories; a galeria do prédio ganhou as catracas novas, o corredor do 6º andar e a entrada real; a faixa da sala ganhou o banheiro e a sala vista do fundo.
+8. **Final da página:** imagem do terraço da cobertura, a perspectiva da construtora, com o selo "Imagem ilustrativa". Mais tarde, dá para trocar por uma foto real do terraço.
 
 ### O título muda sozinho conforme a profissão do link
 
