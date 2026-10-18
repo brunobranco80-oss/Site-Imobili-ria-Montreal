@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- LANDING v3 · "REAL PRIMEIRO" — Sala 601 · Empresarial João Carvalho · Imobiliária Montreal (CRECI 4648-J)
+<!-- LANDING v4 (17/10/2026) · vídeo da 601 no topo + fachada real + oferta fixa + 4 perguntas no WhatsApp · base v3 "REAL PRIMEIRO" — Sala 601 · Empresarial João Carvalho · Imobiliária Montreal (CRECI 4648-J)
      Base: Modelo C (Montreal direto). Hero em vídeo real, galeria com fotos reais (renders sempre marcados como ilustração).
      Publicação: pastas fotos/ e video/ ao lado deste arquivo; bloco CONFIG no fim (ver README_webmaster.md). -->
 <html lang="pt-BR">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#FAF7F2">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..700,0..100&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="fotos/t/01_vista_janela_601.webp">
+<link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_hero_4x5.webp" media="(max-width: 959px)"><link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_hero_16x9.webp" media="(min-width: 960px)">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -300,6 +300,11 @@
   .card-contact a.line{display:flex;gap:.7rem;align-items:center;text-decoration:none;font-weight:500;overflow-wrap:anywhere}
   .card-contact a.line:hover{color:var(--sea)}
   .card-contact svg{width:20px;height:20px;stroke:var(--sea-2);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .card-contact .redes-t{font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:.4rem}
+  .redes-foot{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin:.2rem 0 .8rem}
+  .redes-foot a{display:inline-flex;gap:.45rem;align-items:center;text-decoration:none;color:var(--ink);font-weight:500;font-size:.85rem}
+  .redes-foot a:hover{color:var(--sea)}
+  .redes-foot svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 
   /* faq */
   .faq{display:grid;gap:.5rem;max-width:820px}
@@ -415,6 +420,58 @@
   .final-fig{position:relative;margin:0}
   .final-fig img{display:block;width:100%}
   .final-fig figcaption{position:absolute;left:.8rem;bottom:.8rem;background:rgba(20,23,26,.72);color:#fff;font-size:.72rem;font-weight:600;padding:.32rem .7rem;border-radius:2rem}
+
+  /* faixa fixa da oferta, logo abaixo do cabeçalho */
+  .ofbar{display:flex;align-items:center;justify-content:center;gap:.55rem;background:var(--red);color:#fff;text-decoration:none;font-size:.8rem;font-weight:600;line-height:1.2;padding:.45rem 4%;text-align:center}
+  .ofbar:hover{background:var(--red-dark)}
+  .ofbar b{background:rgba(255,255,255,.2);border-radius:2rem;padding:.2rem .65rem;font-weight:700;white-space:nowrap}
+  .ofbar .ofb-short{display:none}
+  @media(max-width:620px){.ofbar{font-size:.76rem;gap:.45rem}.ofbar .ofb-long{display:none}.ofbar .ofb-short{display:inline}}
+  [id]{scroll-margin-top:120px}
+
+  /* topo: no celular o vídeo da 601 vem antes do texto */
+  @media(max-width:959px){.hero .photo-card{order:-1}}
+  .bar{border-top:1px solid rgba(255,255,255,.16)}
+
+  /* fachada real, logo depois da oferta */
+  #fachada{padding:clamp(2.6rem,5vw,4.2rem) 0 0}
+  #fachada .wrap{display:grid;gap:1.6rem;align-items:center}
+  #fachada .wrap>*{min-width:0}
+  @media(min-width:900px){#fachada .wrap{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:3rem}}
+  .fx-foto{position:relative;margin:0;border-radius:var(--r-card);overflow:hidden;background:var(--sand);box-shadow:var(--shadow-2);aspect-ratio:4/5;order:-1}
+  @media(min-width:900px){.fx-foto{order:0;aspect-ratio:auto;height:min(80vh,700px)}}
+  .fx-foto img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .fx-foto .badge{position:absolute;right:.8rem;top:.8rem;z-index:2;background:rgba(255,255,255,.94);color:var(--ink);font-size:.72rem;font-weight:700;padding:.34rem .7rem;border-radius:2rem;display:flex;align-items:center;gap:.4rem}
+  .fx-foto .badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#1FA855}
+  .fx-txt{display:grid;gap:.9rem;align-content:center}
+  .fx-txt h2{margin:0}
+  .fx-txt p{color:var(--ink-2);max-width:46ch}
+  .fx-txt .btn{justify-self:start}
+  @media(max-width:600px){.fx-foto .hf-end{display:none}}
+
+  /* localização: mapa animado + Google Maps */
+  .mapa-anim{position:relative;border-radius:var(--r-card);overflow:hidden;background:#E8E2D6;aspect-ratio:4/5;max-width:520px;width:100%;margin-inline:auto;box-shadow:var(--shadow-2)}
+  .mapa-anim video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .map-full{margin-top:1.8rem;aspect-ratio:4/3}
+  @media(min-width:900px){.map-full{aspect-ratio:21/8}}
+
+  /* WhatsApp: 4 perguntas rápidas (botão flutuante e barra do celular) */
+  .wsheet{position:fixed;inset:0;z-index:90;background:rgba(20,23,26,.5);display:flex;align-items:flex-end;justify-content:center}
+  .wsheet[hidden]{display:none}
+  .ws-box{position:relative;background:var(--white);width:100%;max-width:460px;border-radius:20px 20px 0 0;padding:1.3rem 1.1rem calc(1.2rem + env(safe-area-inset-bottom));display:grid;gap:.55rem;box-shadow:0 -10px 40px rgba(0,0,0,.25);animation:wsin .22s ease}
+  @media(min-width:760px){.wsheet{justify-content:flex-end;padding:0 1.1rem 5.8rem}.ws-box{width:370px;border-radius:18px}}
+  @keyframes wsin{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
+  .ws-head{display:flex;align-items:center;gap:.7rem;padding-right:2.4rem}
+  .ws-head i{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center}
+  .ws-head i svg{width:22px;height:22px;color:#062A14}
+  .ws-t{font-family:var(--ff-display);font-weight:600;font-size:1.3rem;line-height:1.1}
+  .ws-s{font-size:.82rem;color:var(--muted);margin:.1rem 0 .3rem}
+  .ws-op{display:flex;align-items:center;gap:.75rem;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;font-weight:600;font-size:.95rem;color:var(--ink);transition:background .15s,border-color .15s}
+  .ws-op:hover,.ws-op:focus-visible{background:#E9F9EF;border-color:var(--wa)}
+  .ws-op span{font-size:1.2rem;line-height:1}
+  .ws-op::after{content:"›";margin-left:auto;font-family:var(--ff-display);font-size:1.4rem;line-height:1;color:var(--muted)}
+  .ws-free{justify-self:center;font-size:.85rem;font-weight:600;color:var(--sea);padding:.35rem}
+  .ws-x{position:absolute;top:.8rem;right:.8rem;width:34px;height:34px;border-radius:50%;border:0;background:var(--sand);color:var(--ink);font-size:1.35rem;line-height:1;cursor:pointer}
 </style>
 </head>
 <body>
@@ -431,6 +488,7 @@
       <a class="btn wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>WhatsApp</a>
     </div>
   </div>
+  <a class="ofbar o-on" href="#oferta"><span aria-hidden="true">🎁</span><span class="ofb-long">Oferta até 31/10 · aluguel só em janeiro de 2027</span><span class="ofb-short">Aluguel só em janeiro de 2027</span><b id="ofbar-dias">até 31/10</b></a>
 </header>
 
 <main id="topo">
@@ -453,7 +511,7 @@
     </div>
     <div class="photo-card">
       <div class="vid" id="hero-vid">
-        <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="fotos/t/01_vista_janela_601.webp" aria-label="Vídeo real da Sala 601: porta, sala em casco, janela e vista para o mar">
+        <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_hero_16x9.webp" aria-label="Vídeo real da Sala 601: porta, sala em casco, janela e vista para o mar">
           <source src="video/sala601_30s_16x9.mp4?v=5" type="video/mp4" data-desktop>
         </video>
         <span class="badge">Vídeo real</span>
@@ -470,6 +528,22 @@
     <div class="oferta" id="oferta" role="note"><span class="o-tag">Oferta de lançamento</span><b>Alugue agora e comece a pagar o aluguel só em janeiro de 2027</b><span class="o-sub">Para contratos assinados até 31 de outubro. Até dezembro, você paga só o condomínio (R$ 1.066,94) — e usa os meses sem aluguel para fazer a obra do seu jeito.</span><span class="o-dias" id="oferta-dias"></span></div>
   </div>
 </div>
+
+<section id="fachada" aria-label="A fachada real do Empresarial João Carvalho">
+  <div class="wrap">
+    <div class="fx-txt">
+      <span class="tagline">O prédio por fora</span>
+      <h2>Um dos empresariais mais novos de Boa Viagem</h2>
+      <p>Fachada em pele de vidro, terraço com pergolado no térreo e infraestrutura de prédio corporativo, na esquina da Rua Antônio Falcão com a Av. Conselheiro Aguiar.</p>
+      <a class="btn wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>Agendar visita no WhatsApp</a>
+    </div>
+    <figure class="fx-foto">
+      <img src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/hero_fachada_real.webp" srcset="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/hero_fachada_real_720.webp 720w, https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/hero_fachada_real.webp 1100w" sizes="(max-width:899px) 92vw, 640px" alt="Fachada real do Empresarial João Carvalho, em Boa Viagem, com o terraço do térreo em primeiro plano" width="1100" height="1445" loading="lazy">
+      <span class="badge">Foto real</span>
+      <figcaption>Empresarial João Carvalho<span class="hf-end"> · Rua Antônio Falcão, 150</span> · Boa Viagem</figcaption>
+    </figure>
+  </div>
+</section>
 
 <section class="vista" id="vista" aria-label="A vista real da sala">
   <div class="wrap">
@@ -502,7 +576,7 @@
         <figure><img src="fotos/t/22_escritorio_referencia_ILUSTRATIVA.webp" alt="Referência de acabamento de sala do empreendimento" loading="lazy"><figcaption><i>Ilustração</i>Assim pode ficar: acabamento de referência</figcaption></figure>
       </div>
       <p class="real-note">Fotos reais feitas em setembro e outubro de 2026. A única imagem ilustrativa desta linha é a última, marcada como ilustração.</p>
-      <div class="gal-head"><h3>O prédio, em fotos reais</h3><span>Toque para ampliar · 16 fotos reais + 2 ilustrações da fachada</span></div>
+      <div class="gal-head"><h3>O prédio, em fotos reais</h3><span>Toque para ampliar · 18 fotos reais</span></div>
       <div class="gal" id="galeria">
       <button type="button" data-src="fotos/10_lobby.webp" data-cap="Lobby do Empresarial João Carvalho com pé-direito duplo — foto real"><img src="fotos/t/10_lobby.webp" alt="Lobby do Empresarial João Carvalho com pé-direito duplo" loading="lazy"><span><i>Foto real</i> Lobby</span></button>
       <button type="button" data-src="fotos/11_lobby_lustre.webp" data-cap="Lustre e pé-direito duplo do lobby — foto real"><img src="fotos/t/11_lobby_lustre.webp" alt="Lustre e pé-direito duplo do lobby" loading="lazy"><span><i>Foto real</i> Lobby · design assinado</span></button>
@@ -520,8 +594,8 @@
       <button type="button" data-src="fotos/08_terraco_cobertura_2.webp" data-cap="Terraço da cobertura, outro ângulo — foto real"><img src="fotos/t/08_terraco_cobertura_2.webp" alt="Terraço da cobertura, outro ângulo" loading="lazy"><span><i>Foto real</i> Cobertura · Boa Viagem</span></button>
       <button type="button" data-src="fotos/15_business_center_lounge.webp" data-cap="Lounge do business center — foto real"><img src="fotos/t/15_business_center_lounge.webp" alt="Lounge do business center" loading="lazy"><span><i>Foto real</i> Lounge</span></button>
       <button type="button" data-src="fotos/29_entrada_real.webp" data-cap="Entrada do Empresarial João Carvalho, na Rua Antônio Falcão — foto real"><img src="fotos/t/29_entrada_real.webp" alt="Entrada do Empresarial João Carvalho" loading="lazy"><span><i>Foto real</i> Entrada</span></button>
-      <button type="button" data-src="fotos/23_fachada_noite_ILUSTRATIVA.webp" data-cap="Fachada em pele de vidro à noite — ilustração"><img src="fotos/t/23_fachada_noite_ILUSTRATIVA.webp" alt="Fachada em pele de vidro à noite" loading="lazy"><span><i>Ilustração</i> Fachada à noite</span></button>
-      <button type="button" data-src="fotos/24_fachada_dia_ILUSTRATIVA.webp" data-cap="Fachada de dia — ilustração"><img src="fotos/t/24_fachada_dia_ILUSTRATIVA.webp" alt="Fachada de dia" loading="lazy"><span><i>Ilustração</i> Fachada de dia</span></button>
+      <button type="button" data-src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/30_fachada_real.webp" data-cap="Fachada em pele de vidro, com o terraço do térreo em primeiro plano — foto real"><img src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/t/30_fachada_real.webp" alt="Fachada real do Empresarial João Carvalho" loading="lazy" style="object-position:center 30%"><span><i>Foto real</i> Fachada</span></button>
+      <button type="button" data-src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/31_terraco_terreo_torre.webp" data-cap="Terraço do térreo com pergolado, ao pé da torre — foto real"><img src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/t/31_terraco_terreo_torre.webp" alt="Terraço do térreo com pergolado, ao pé da torre" loading="lazy" style="object-position:center 55%"><span><i>Foto real</i> Terraço e torre</span></button>
     </div>
     </div>
     <div class="route" id="rota-planta" hidden>
@@ -617,10 +691,10 @@
         <span class="tagline">Gravado em setembro e outubro de 2026</span>
         <h2>Tour completo em vídeo</h2>
         <p class="muted">Do lobby à Sala 601, com o prédio de verdade: pouco mais de 1 minuto, filmado em pé, do jeito que você vê no celular.</p>
-        <ul class="keys" style="margin:1rem 0 .4rem"><li>Lobby com pé-direito duplo</li><li>Acesso facial</li><li>Cafeteria e garden living</li><li>Business center e auditório</li><li>Terraço na cobertura</li><li>A Sala 601 e a vista</li></ul>
+        <ul class="keys" style="margin:1rem 0 .4rem"><li>Lobby com pé-direito duplo</li><li>Acesso facial</li><li>Cafeteria e lounge</li><li>Business center e auditório</li><li>A Sala 601 e a vista</li><li>Planta do andar</li></ul>
       </div>
       <div class="video-box vert" id="tourBox">
-        <video id="tourVideo" controls preload="none" playsinline poster="fotos/capa_tour_v.webp?v=2" aria-label="Tour completo em vídeo do Empresarial João Carvalho e da Sala 601"><source src="video/tour_completo_9x16.mp4?v=5" type="video/mp4"></video>
+        <video id="tourVideo" controls preload="none" playsinline poster="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_v8_tour_v.webp" aria-label="Tour completo em vídeo do Empresarial João Carvalho e da Sala 601"><source src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/video/v8_tour_misto_9x16.mp4" type="video/mp4"></video>
         <button class="play" id="tourPlay" type="button" aria-label="Assistir ao tour"><span></span></button>
         <iframe id="videoFrame" title="Vídeo da Sala 601" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
       </div>
@@ -670,8 +744,8 @@
       <li><svg viewBox="0 0 24 24"><path d="M4 21V5l8-3 8 3v16"/><path d="M9 9h2M13 9h2M9 13h2M13 13h2M9 17h2M13 17h2M2 21h20"/></svg>Salas de 45 a 60 m² · endereço 100% corporativo</li>
     </ul>
     <div class="predio-video vert-grid">
-      <div class="video-box vert"><video id="predioVideo" controls preload="none" playsinline poster="fotos/capa_predio_v.webp" aria-label="O prédio em 20 segundos: lobby, acesso facial, business center, auditório e terraço"><source src="video/predio_20s_9x16.mp4?v=5" type="video/mp4"></video><button class="play" type="button" data-for="predioVideo" aria-label="Assistir"><span></span></button></div>
-      <div><h3 style="font-family:var(--ff-display);font-weight:400;font-size:1.6rem;letter-spacing:.03em">O prédio em 20 segundos</h3><p class="muted">Lobby, catracas com reconhecimento facial, business center, auditório panorâmico e o terraço da cobertura — tudo filmado no local, sem render.</p></div>
+      <div class="video-box vert"><video id="predioVideo" controls preload="none" playsinline poster="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_v9_sala_v.webp" aria-label="A sala e o prédio em 50 segundos: Sala 601, banheiro, business center, cafeteria, garden living e fachada"><source src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/video/v9_sala_primeiro_9x16.mp4" type="video/mp4"></video><button class="play" type="button" data-for="predioVideo" aria-label="Assistir"><span></span></button></div>
+      <div><h3 style="font-family:var(--ff-display);font-weight:400;font-size:1.6rem;letter-spacing:.03em">A sala e o prédio em 50 segundos</h3><p class="muted">Primeiro a Sala 601 e o banheiro privativo; depois o business center, a cafeteria, o garden living e a fachada — imagens filmadas no local, sem render.</p></div>
     </div>
   </div>
 </section>
@@ -691,7 +765,10 @@
       </ul>
       <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Ant%C3%B4nio+Falc%C3%A3o%2C+150+-+Boa+Viagem%2C+Recife+-+PE" target="_blank" rel="noopener">Traçar rota no Google Maps</a>
     </div>
-    <div class="map"><div class="fallback" aria-hidden="true">Rua Antônio Falcão, 150 — Boa Viagem, Recife – PE</div><iframe title="Mapa — Empresarial João Carvalho" src="https://www.google.com/maps?q=Rua+Ant%C3%B4nio+Falc%C3%A3o%2C+150+-+Boa+Viagem%2C+Recife+-+PE&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="mapa-anim"><video id="mapaVideo" muted loop playsinline preload="none" poster="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_mapa_4x5.webp" aria-label="Mapa ilustrativo animado: o Empresarial João Carvalho a 300 m da praia de Boa Viagem"><source src="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/video/mapa_animado_4x5.mp4" type="video/mp4"></video></div>
+  </div>
+  <div class="wrap">
+    <div class="map map-full"><div class="fallback" aria-hidden="true">Rua Antônio Falcão, 150 — Boa Viagem, Recife – PE</div><iframe title="Mapa — Empresarial João Carvalho" src="https://www.google.com/maps?q=Rua+Ant%C3%B4nio+Falc%C3%A3o%2C+150+-+Boa+Viagem%2C+Recife+-+PE&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
   </div>
 </section>
 
@@ -712,6 +789,9 @@
       <a class="line" data-wa href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.2 3.4c-.5.4-1.3 0-1.3-.7V16.5A2.5 2.5 0 0 1 4 14z"/></svg>WhatsApp (81) 98326-8980</a>
       <a class="line" href="tel:+5581983268980"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Ligar (81) 98326-8980</a>
       <a class="line" href="mailto:atendimento@imontreal.com.br"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>atendimento@imontreal.com.br</a>
+      <p class="redes-t">Siga a Montreal</p>
+      <a class="line" href="https://www.instagram.com/imobiliariamontreal/" target="_blank" rel="noopener" data-rede="instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Instagram @imobiliariamontreal</a>
+      <a class="line" href="https://www.facebook.com/profile.php?id=61595046212522" target="_blank" rel="noopener" data-rede="facebook"><svg viewBox="0 0 24 24"><path d="M14 21v-7.5h2.6l.4-3H14V8.6c0-.9.3-1.5 1.5-1.5H17V4.4A20 20 0 0 0 14.8 4C12.6 4 11 5.4 11 7.9v2.6H8.5v3H11V21"/></svg>Facebook · Imobiliária Montreal</a>
       <p class="small muted">Av. Eng. Domingos Ferreira, 4060 · Sala 801 · Empresarial Blue Tower · Boa Viagem, Recife – PE · CRECI 4648-J</p>
     </div>
   </div>
@@ -751,13 +831,26 @@
 
 <footer><div class="wrap">
   <div style="width:180px;margin-bottom:1rem"><img src="fotos/logo_montreal_horizontal.png" alt="Imobiliária Montreal" width="900" height="289"></div>
+  <div class="redes-foot"><a href="https://www.instagram.com/imobiliariamontreal/" target="_blank" rel="noopener" data-rede="instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>@imobiliariamontreal</a><a href="https://www.facebook.com/profile.php?id=61595046212522" target="_blank" rel="noopener" data-rede="facebook"><svg viewBox="0 0 24 24"><path d="M14 21v-7.5h2.6l.4-3H14V8.6c0-.9.3-1.5 1.5-1.5H17V4.4A20 20 0 0 0 14.8 4C12.6 4 11 5.4 11 7.9v2.6H8.5v3H11V21"/></svg>Imobiliária Montreal</a></div>
   <p><strong style="color:#fff">Imobiliária Montreal Ltda.</strong> · CRECI 4648-J · Av. Eng. Domingos Ferreira, 4060, Sala 801, Empresarial Blue Tower, Boa Viagem, Recife – PE</p>
   <p>Empresarial João Carvalho é um empreendimento da Vale do Ave. Fotos e vídeos feitos no local em setembro e outubro de 2026; as imagens marcadas como ilustração são renders do empreendimento. Valores sujeitos a alteração sem aviso prévio, respeitadas as ofertas vigentes. Distâncias aproximadas.<span class="o-on"> Oferta "aluguel só a partir de janeiro de 2027": válida para contratos assinados até 31/10/2026; até 31/12/2026 o locatário paga o condomínio, a água e, quando lançados, o IPTU e a taxa de bombeiro.</span></p>
   <p>© <span id="ano">2026</span> Imobiliária Montreal · Sala 601 · Boa Viagem, Recife – PE</p>
 </div></footer>
 
-<a class="fab" data-wa href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="#062A14"><use href="#i-chat"/></svg></a>
-<div class="bar" role="region" aria-label="Contato rápido"><div class="p"><b><span class="o-on">Aluguel só em 2027</span><span class="o-off">R$ 5.000,00/mês</span></b><span><span class="o-on">R$ 5.000,00/mês a partir de janeiro · </span>Sala 601 · 46,5 m²</span></div><a class="btn wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>WhatsApp</a></div>
+<a class="fab" data-wa-sheet href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="#062A14"><use href="#i-chat"/></svg></a>
+<div class="bar" role="region" aria-label="Contato rápido"><div class="p"><b><span class="o-on">Aluguel só em 2027</span><span class="o-off">R$ 5.000,00/mês</span></b><span><span class="o-on">R$ 5.000,00/mês a partir de janeiro · </span>Sala 601 · 46,5 m²</span></div><a class="btn wa" data-wa-sheet href="#" target="_blank" rel="noopener" aria-haspopup="dialog"><svg><use href="#i-chat"/></svg>WhatsApp</a></div>
+<div class="wsheet" id="waSheet" role="dialog" aria-modal="true" aria-labelledby="wsTitle" hidden>
+  <div class="ws-box">
+    <button class="ws-x" type="button" aria-label="Fechar">×</button>
+    <div class="ws-head"><i aria-hidden="true"><svg><use href="#i-chat"/></svg></i><p class="ws-t" id="wsTitle">Como podemos ajudar?</p></div>
+    <p class="ws-s">Escolha uma opção: a mensagem abre pronta no seu WhatsApp.</p>
+    <a class="ws-op" data-q="visita" href="#" target="_blank" rel="noopener"><span aria-hidden="true">📅</span>Quero agendar uma visita</a>
+    <a class="ws-op" data-q="valores" href="#" target="_blank" rel="noopener"><span aria-hidden="true">💰</span>Quais são os valores?</a>
+    <a class="ws-op" data-q="fotos" href="#" target="_blank" rel="noopener"><span aria-hidden="true">📸</span>Quero ver mais fotos e vídeos</a>
+    <a class="ws-op" data-q="local" href="#" target="_blank" rel="noopener"><span aria-hidden="true">📍</span>Onde fica a sala?</a>
+    <a class="ws-free" data-q="livre" href="#" target="_blank" rel="noopener">Prefiro escrever do meu jeito</a>
+  </div>
+</div>
 <div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button type="button" class="x" aria-label="Fechar">×</button><button type="button" class="prev" aria-label="Foto anterior">‹</button><img src="" alt=""><button type="button" class="next" aria-label="Próxima foto">›</button><div class="cap"></div></div>
 <script>
 /* ========= CONFIGURAÇÃO (webmaster preenche aqui) ========= */
@@ -768,7 +861,7 @@ const CONFIG = {
   WA_TEXT_POS: "Olá! Vi a Sala 601 do Empresarial João Carvalho e gostaria de mais informações.",
   META_PIXEL_ID: "1782433116337628",  // Pixel Sala 601 (portfólio Imobiliária Montreal, criado em 03/10/2026)
   GA4_ID: "",             // ex.: "G-XXXXXXXXXX"      (Google Analytics 4)
-  GADS_CONVERSION: "",    // ex.: "AW-123456789/AbCdEfGhIjKlMnOp" (Google Ads → Conversões → "Clique WhatsApp")
+  GADS_CONVERSION: "AW-18498712205/j-o8COj89JMdEI3l7_RE",    // Google Ads → Conversões → "Clique WhatsApp" (conta 860-874-3299, ligado em 07/10/2026)
   OPENAI_PIXEL_ID: "",    // ID do pixel fornecido no OpenAI Ads Manager (ads.openai.com)
   VIDEO_URL: ""           // opcional: "https://www.youtube.com/embed/XXXXXXXXXXX" (use um vídeo EM PÉ / Shorts) — substitui o MP4 local do tour
 };
@@ -824,6 +917,7 @@ function trackContact(origem) {
     const mobile = window.matchMedia("(max-width: 959px)").matches;
     const alto = window.matchMedia("(min-width: 1200px)").matches; // computador: vídeo alto, da altura do bloco do título
     hv.querySelector("source").src = mobile ? "video/sala601_30s_4x5.mp4?v=5" : (alto ? "video/sala601_30s_desk.mp4?v=5" : "video/sala601_30s_16x9.mp4?v=5");
+    hv.poster = mobile ? "https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_hero_4x5.webp" : (alto ? "https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_hero_desk.webp" : "https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@ee577ab85e73c4f0602348c3e76575a7ce23f305/sala601_v4/fotos/capa_hero_16x9.webp");   // 1º quadro do vídeo: a porta da 601
     const mb = document.getElementById("heroMute");
     const ICO_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 9.5l4 4m0-4l-4 4" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
     const ICO_ON  = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
@@ -843,6 +937,14 @@ function trackContact(origem) {
       }), { threshold: [0, 0.35, 0.6] }).observe(hv);
     }
     document.addEventListener("visibilitychange", () => { if (document.hidden) { hv.pause(); if (!hv.muted) { hv.muted = true; label(); } } else if (inView) tryPlay(); });
+  }
+  // mapa animado da localização: toca só quando aparece na tela
+  const mv = document.getElementById("mapaVideo");
+  if (mv) {
+    mv.muted = true;
+    const mp = () => { const p = mv.play(); if (p && p.catch) p.catch(() => {}); };
+    if ("IntersectionObserver" in window) new IntersectionObserver(en => en.forEach(x => { if (x.isIntersecting) mp(); else if (!mv.paused) mv.pause(); }), { threshold: 0.3 }).observe(mv);
+    else mp();
   }
   // faixa de fotos: setas rolam uma "página"
   const strip = document.getElementById("galeria-hero");
@@ -921,6 +1023,8 @@ document.getElementById("ano").textContent = new Date().getFullYear();
   const dias = Math.round((d1 - d0) / 86400000), el = document.getElementById("oferta-dias");
   if (dias < 0) { document.documentElement.classList.add("oferta-encerrada"); return; }
   if (el) el.textContent = dias === 0 ? "Último dia: 31 de outubro" : dias === 1 ? "Falta 1 dia para 31 de outubro" : "Faltam " + dias + " dias para 31 de outubro";
+  const ob = document.getElementById("ofbar-dias");
+  if (ob) ob.textContent = dias === 0 ? "Último dia" : dias === 1 ? "Falta 1 dia" : "Faltam " + dias + " dias";
 })();
 
 /* ========= FORMULÁRIO → WHATSAPP (modelo C) ========= */
@@ -1006,6 +1110,40 @@ document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',(
              ["consult","Sua consultoria"],["financ","Sua consultoria"],["contab","Seu escritório de contabilidade"],
              ["corpor","Seu escritório"],["empresa","Seu escritório"]].find(x => n.includes(x[0]));
   if (t) h.innerHTML = t[1] + fim;
+})();
+
+/* ========= WHATSAPP: 4 PERGUNTAS RÁPIDAS (botão flutuante e barra do celular) ========= */
+(function () {
+  const sh = document.getElementById("waSheet"); if (!sh) return;
+  const src = (new URLSearchParams(location.search).get("utm_source") || "").toLowerCase();
+  const hj = new Date(), ativa = Date.UTC(hj.getFullYear(), hj.getMonth(), hj.getDate()) <= Date.UTC(2026, 9, 31);
+  const base = "Olá! Vi a Sala 601 do Empresarial João Carvalho";
+  const T = {
+    visita: base + " e quero agendar uma visita." + (ativa ? " Tenho interesse na condição de aluguel só a partir de janeiro de 2027." : ""),
+    valores: base + " e gostaria de saber os valores" + (ativa ? " e como funciona o aluguel só a partir de janeiro de 2027." : " (aluguel, condomínio e taxas)."),
+    fotos: base + " e gostaria de receber mais fotos e vídeos da sala.",
+    local: base + " e gostaria de saber a localização exata.",
+    livre: ativa ? CONFIG.WA_TEXT : CONFIG.WA_TEXT_POS
+  };
+  const suf = src ? " (vi no " + (window.__origem || src) + ")" : "";
+  const link = k => "https://wa.me/" + CONFIG.WHATSAPP + "?text=" + encodeURIComponent(T[k] + suf);
+  let last = null;
+  function close() { if (sh.hidden) return; sh.hidden = true; document.body.style.overflow = ""; if (last) last.focus(); }
+  function open(e) { e.preventDefault(); last = e.currentTarget; sh.hidden = false; document.body.style.overflow = "hidden"; sh.querySelector(".ws-op").focus();
+    if (window.gtag) gtag("event", "wa_menu_aberto"); }
+  sh.querySelectorAll("[data-q]").forEach(a => {
+    a.href = link(a.dataset.q);
+    a.addEventListener("click", () => {
+      trackContact(src || "direto");
+      if (window.gtag) gtag("event", "wa_pergunta", { pergunta: a.dataset.q });
+      if (window.fbq) fbq("trackCustom", "WaPergunta", { pergunta: a.dataset.q });
+      setTimeout(close, 300);
+    });
+  });
+  document.querySelectorAll("[data-wa-sheet]").forEach(b => { b.href = link("livre"); b.addEventListener("click", open); });
+  sh.querySelector(".ws-x").addEventListener("click", close);
+  sh.addEventListener("click", e => { if (e.target === sh) close(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
 })();
 </script>
 </body>
