@@ -1,0 +1,67 @@
+/* ========= v3.1 · efeitos (taste-skill: título que sobe, cortina, números que rolam, janela da fachada) ========= */
+  :root{--ease-expo:cubic-bezier(.16,1,.3,1);--ease-soft:cubic-bezier(.33,1,.68,1);--ease-io:cubic-bezier(.76,0,.24,1)}
+  .sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+  /* entradas em sequência (substitui a entrada antiga) */
+  .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-expo) var(--d,0ms),transform .9s var(--ease-expo) var(--d,0ms)}
+  .rv.in{opacity:1;transform:none}
+
+  /* fotos que abrem como cortina */
+  .sh{clip-path:inset(0 100% 0 0 round 16px)}
+  .sh.sh-r{clip-path:inset(0 0 0 100% round 16px)}
+  .sh img,.sh video{transform:scale(1.12)}
+  .sh.in{clip-path:inset(0 0 0 0 round 16px);transition:clip-path 1.2s var(--ease-expo) var(--d,0ms)}
+  .sh.in img,.sh.in video{transform:none;transition:transform 1.6s var(--ease-soft) var(--d,0ms)}
+  .sh.done{clip-path:none}
+
+  /* título que sobe ao abrir */
+  #hero-titulo .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+  #hero-titulo .w>span{display:inline-block;will-change:transform}
+  .fx .hero #hero-titulo:not(.split){visibility:hidden}
+  .fx #hero-titulo.split .w>span{transform:translateY(108%)}
+  .fx .hero.go #hero-titulo .w>span{transform:none;transition:transform .95s var(--ease-expo) calc(120ms + var(--l,0) * 110ms)}
+  .fx .hero .ld{opacity:0;transform:translateY(16px)}
+  .fx .hero.go .ld{opacity:1;transform:none;transition:opacity .7s var(--ease-expo) var(--d,0ms),transform .8s var(--ease-expo) var(--d,0ms)}
+  .fx .hero .photo-card.ld{transform:none;clip-path:inset(0 0 0 100% round 16px);opacity:1}
+  .fx .hero.go .photo-card.ld{clip-path:inset(0 0 0 0 round 16px);transition:clip-path 1.2s var(--ease-expo) 200ms}
+  .fx .hero.go .photo-card.ld.done{clip-path:none}
+  /* segurança: se o script falhar, tudo aparece em 2 s */
+  @keyframes fxsafe{to{opacity:1;transform:none;visibility:visible;clip-path:none}}
+  .fx .hero:not(.go) .ld,.fx .hero #hero-titulo:not(.split){animation:fxsafe 0s 2s forwards}
+
+  /* números que rolam, como um placar */
+  .roll{font-variant-numeric:tabular-nums}
+  .roll span{font-size:inherit!important;color:inherit!important;font-weight:inherit!important;display:inline;margin:0!important}
+  .roll .dg{display:inline-grid}
+  .roll .dg .col{display:block}
+  .dg{display:inline-grid;position:relative;overflow:hidden;line-height:1;vertical-align:baseline}
+  .dg .gh{visibility:hidden}
+  .dg .col{position:absolute;left:0;right:0;top:0;text-align:center;transform:translateY(0)}
+  .dg .col i{display:block;font-style:normal;height:1em;line-height:1}
+  .rolling .dg .col{transform:translateY(calc(var(--n) * -1em));transition:transform 1.7s var(--ease-expo) var(--dd,0ms)}
+
+  /* a fachada: abre de uma janela até a tela toda */
+  .janela{--p:1;width:min(1180px,92%);margin:0 auto 2.2rem}
+  .janela-stage{position:relative}
+  .janela-fig{position:relative;margin:0;border-radius:var(--r-card);overflow:hidden;background:var(--sand)}
+  .janela-fig img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%}
+  @media(min-width:900px){.janela-fig img{aspect-ratio:16/9}}
+  .janela-fig figcaption{position:absolute;left:1rem;right:auto;max-width:calc(100% - 2rem);bottom:1rem;background:rgba(20,23,26,.72);color:#fff;font-size:.78rem;font-weight:600;padding:.4rem .8rem;border-radius:2rem}
+  .janela-fig figcaption i{font-style:normal;color:#FFD9D4;margin-right:.35rem}
+  .janela-txt{display:none;max-width:none}
+  .fx .janela{width:100%;height:220vh;margin:0 0 2.2rem}
+  .fx .janela-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+  .fx .janela-fig{position:absolute;inset:0;border-radius:0;background:transparent;clip-path:inset(calc((1 - var(--p)) * 21%) calc((1 - var(--p)) * 29%) round calc((1 - var(--p)) * 18px))}
+  .fx .janela-fig img{width:100%;height:100%;aspect-ratio:auto;object-position:center 30%;transform:scale(calc(1.18 - .18 * var(--p)))}
+  .fx .janela-fig figcaption{left:max(1rem,4%);bottom:max(5.5rem,10%);opacity:clamp(0,calc((var(--p) - .8) * 5),1)}
+  .fx .janela-txt{display:block;position:absolute;left:0;right:0;top:max(4.5rem,7%);text-align:center;font-family:var(--ff-display);font-weight:600;font-size:clamp(1.05rem,2.2vw,1.5rem);letter-spacing:-.01em;color:var(--ink);opacity:clamp(0,calc(1 - var(--p) * 3),1);pointer-events:none;padding-inline:max(16px,4%)}
+  @media(max-width:759px){.fx .janela{height:200vh}.fx .janela-fig{clip-path:inset(calc((1 - var(--p)) * 19%) calc((1 - var(--p)) * 17%) round calc((1 - var(--p)) * 16px))}}
+
+  /* galeria: a fachada ocupa duas linhas */
+  .gal .g-big{grid-row:span 2}
+  .gal .g-big img{aspect-ratio:auto;height:100%;object-position:center 30%}
+
+  /* chamada final com a fachada real */
+  .final-fig img{aspect-ratio:4/5;object-position:center 30%}
+  .final-fig figcaption{right:auto}
+  @media(min-width:900px){.final-fig{max-width:460px;justify-self:end;width:100%}}
