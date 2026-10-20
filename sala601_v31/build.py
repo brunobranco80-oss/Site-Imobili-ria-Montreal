@@ -3,13 +3,14 @@ S='/home/claude/landing_v5/before.html'
 s=open(S,encoding='utf-8').read()
 FAC="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@d0adf67e4dbcbe8b7781636f2920c7ee814bc857/sala601_v5_janela/fotos/30_fachada_real.webp"
 OG="https://cdn.jsdelivr.net/gh/brunobranco80-oss/Site-Imobili-ria-Montreal@f50dfe6444ffc432149a7b3fec94200d831d0dd4/sala601_v5_janela/og_sala601_v5.jpg"
-URL="https://sala601-imobiliaria-montreal.base44.app/sala601/vista-para-o-mar.html"
+URL="https://sala601-imobiliaria-montreal.base44.app/sala601/index.html"
 def rep(a,b,n=1):
     global s
     c=s.count(a); assert c==n,(c,a[:80]); s=s.replace(a,b)
 # comentário de versão
-rep('<!-- LANDING v3 · "REAL PRIMEIRO"','<!-- LANDING v3.1 · "REAL PRIMEIRO" + fachada real e efeitos do taste-skill (20/10/2026) · antes: v3')
+rep('<!-- LANDING v3 · "REAL PRIMEIRO"','<!-- LANDING v3.1 · "REAL PRIMEIRO" + fachada real e efeitos do taste-skill · página principal desde 20/10/2026 (OK do Bruno) · antes: v3')
 # cabeçalho: cartão do link e endereço próprio
+rep('<meta property="og:title" content="Trabalhe com vista para o mar no empresarial boutique de Boa Viagem · Sala 601 · Recife – PE">','<meta property="og:title" content="Sala 601 com vista para o mar · Boa Viagem, Recife – PE">')
 rep('<link rel="canonical" href="https://sala601-imobiliaria-montreal.base44.app/sala601/index.html">',f'<link rel="canonical" href="{URL}">')
 rep('<meta property="og:description" content="46,5 m² para projetar do zero, no 6º andar, com vista para o mar. Alugue agora e comece a pagar o aluguel só em janeiro de 2027 (contratos até 31/10). R$ 5.000,00/mês. Veja o vídeo real da sala.">',
     '<meta property="og:description" content="46,5 m² no 6º andar do Empresarial João Carvalho, em Boa Viagem, Recife – PE. R$ 5.000,00/mês. Assinando até 31/10, o aluguel só começa em janeiro de 2027. Veja o vídeo real e agende sua visita.">')
